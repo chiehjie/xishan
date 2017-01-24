@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding:0;
+}
+#all{
+	width: 100%;
+	height: auto;
+	background: #efefef;
+	font-family: '微软雅黑';
+}
+header{
+	width: 100%;
+	line-height: 50px;
+	background: #fff;
+	border-bottom: 1px solid#bfbfbf;
+}
+.header_Cen{
+	width: 90%;
+	margin:0 auto;
+}
+.header_Cen div:nth-child(1){
+    font-size: 1.6em;
+	color: #000;
+    padding-top: 11px;
+}
+.header_Cen div:nth-child(2){
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+section{
+	width: 100%;
+	height:230px;
+	background: #bbb9b9 url(../images/success11.png) no-repeat;
+	background-size: 100%; 
+	position: relative;
+}
+.sectionCen{
+	width: 90%;
+	height: auto;
+	margin:0 auto;
+}
+.sectionCen span{
+	position:absolute;
+	bottom: 5%;
+	right: 5%;
+	font-size: 1em;
+	color:#1f1f1f;
+}
+.sectionCen a{
+	color: #b11a1a;
+	text-decoration: underline;
+}

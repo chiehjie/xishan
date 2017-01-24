@@ -1,0 +1,64 @@
+*{
+    font-family: "微软雅黑";
+}
+.headerBox{
+    font-size: 3em;
+    background-color: rgb(212,39,39);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.headerBox div:nth-child(1){
+    position: absolute;
+    text-align: center;
+    font-size: 1.3em;
+    left: 5%;
+    top: 26px;
+    color: white;
+}
+.headerBox div:nth-child(2){
+    text-align: center;
+    color: white;
+    font-size:1em;
+}
+.headerBox span{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+.bgcolor{
+    width: 100%;
+    height: 500px;
+    background: #EFEFEF;
+    padding:20px 0;
+}
+.banner div img{
+    width: 100%;
+}
+.mui-ios .mui-table-view-cell{
+    padding: 30px 20px;
+    font-size: 2.6em;
+}
+.mui-table-view-cell p{
+    padding: 30px 20px;
+    font-size: 1.2em;
+}
+.mui-table-view-cell.mui-collapse.mui-active .mui-collapse-content, .mui-table-view-cell.mui-collapse.mui-active .mui-table-view{
+    padding:30px 30px;
+}
+.mui-collapse-content div div a dl{
+    text-align: center;
+    font-size:0.8em;
+    color: #000;
+}
+img {
+    border: 0;
+    display: inherit;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+.content{
+    width: 126px;
+    height: 126px;
+    margin: auto;
+}

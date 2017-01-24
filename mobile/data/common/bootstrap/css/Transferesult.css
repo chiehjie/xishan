@@ -1,0 +1,111 @@
+*{
+    font-family: "微软雅黑";
+}
+.headerBox{
+    font-size: 2em;
+    background-color: rgb(255,255,255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D6D7D8;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.headerBox div:nth-child(1){
+    text-align: center;
+    font-size: 0.6em;
+    color: #000;
+}
+.headerBox div:nth-child(2){
+    text-align: left;
+    color: #000;
+    text-indent: 57px;
+    font-size: 0.5em;
+    float: left;
+}
+.headerBox span{
+    position: absolute;
+    right: 22px;
+    color: #000;
+    top: 20px;
+    font-size: 0.5em;
+}
+.contHeader{
+    margin:0 auto;
+}
+.information{
+    width: 100%;
+    background: #ffffff;
+    padding: 15px 20px;
+    margin-top: 18px;
+}
+.radius{
+    border-radius: 100%;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #ffffff;
+    background: #4FC22F;
+}
+.list ul li:nth-child(2){
+    padding: 5px;
+    background: #4FC22F;
+    border-radius: 100px;
+    width: 1px;
+    margin-left: 13px;
+    margin-top: 5px;
+}
+.list ul li:nth-child(3){
+    padding: 5px;
+    background: #4FC22F;
+    border-radius: 100px;
+    width: 1px;
+    margin-left: 13px;
+    margin-top: 12px;
+}
+.list ul li:nth-child(4){
+    padding: 5px;
+    background: #949494;
+    border-radius: 100px;
+    width: 1px;
+    margin-left: 13px;
+    margin-top: 12px;
+}
+.list ul li:nth-child(5){
+    padding: 5px;
+    background: #949494;
+    border-radius: 100px;
+    width: 1px;
+    margin-left: 13px;
+    margin-top: 12px;
+}
+.list ul li:nth-child(6){
+    background: #949494;
+    border-radius: 100px;
+    width: 37px;
+    height: 37px;
+    font-size: 1.5em;
+    margin-top: 4px;
+    color: #FFF;
+    line-height: 37px;
+    text-align: center;
+}
+.list-one p:nth-child(1){
+    padding-top: 10px;
+    font-size: 1em;
+    color: #4FC22F;
+}
+.list-one p:nth-child(2){
+    font-size: 1em;
+}
+.list-one p:nth-child(3){
+    padding-bottom: 27px;
+    font-size: 1em;
+}
+.list-one p:nth-child(4){
+    font-size: 1em;
+    color: #000;
+}

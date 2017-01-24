@@ -1,0 +1,186 @@
+*{
+    font-family: "微软雅黑";
+}
+body{
+    background-color: rgb(255,255,255);
+}
+.headerBox{
+    font-size: 3em;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.headerBox div:nth-child(1){
+    position: absolute;
+    text-align: center;
+    font-size: 1.3em;
+    left: 5%;
+    top: 1.2%;
+    color: #727272;
+}
+.headerBox div:nth-child(2){
+    text-align: center;
+}
+.box-color{
+    background-color:#EFEFF4 ;
+}
+.box-color>div:nth-child(2){
+    margin-bottom: 10%;
+}
+.jindu{
+    margin-top: 15%;
+}
+.jindu p{
+    width: 33.3%;
+    float: left;
+    font-size: 2.6em;
+    text-align: center;
+}
+.jindu p:nth-child(2){
+    color: #D42727;
+}
+.jindu p+p{
+    text-align: center;
+}
+.guocheng{
+    margin-top: 25%;
+    margin-left: 12%;
+}
+.guocheng div{
+    float: left;
+}
+.yuan{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #CFCFCF;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.yuan:nth-child(3){
+    background-color: #D42727;
+    margin-left: 3%;
+}
+.henxian{
+    width: 33%;
+    height: 3px;
+    background-color: #CFCFCF;
+    margin-top: 1.5%;
+}
+input[type="text"],input[type="date"]{
+    border: none;
+}
+input[type="date"]{
+    width: 60%;
+}
+input[type="text"]{
+    font-size: 2em;
+}
+input{
+    margin-top: 6%;
+}
+.chang{
+    width: 80%;
+    margin-left: 10%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #bfbfbf;
+
+}
+.chang>p{
+    width: 36%;
+    padding-top: 4%;
+    font-size: 2em;
+}
+.duan{
+    float: left;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    margin-left: 10%;
+    border-bottom: 1px solid #bfbfbf;
+
+}
+.duan>p{
+    width: 50%;
+    float: left;
+    display: inline;
+    padding-top: 5%;
+    font-size: 2em;
+}
+.duan>input{
+    float: left;
+}
+#label5{
+    width: 35%;
+    margin-top: 3%;
+}
+/*#idCard{*/
+    /*width: 50%;*/
+/*}*/
+.Validform_checktip{
+    display: block;
+    margin-top: -21%;
+    width: 43%;
+}
+#myButton{
+    background-color: #EFEFF4;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#button{
+    margin-top: 10%;
+    margin-bottom: 15%;
+    width: 80%;
+    height: 100px;
+    font-size: 2.3em;
+    background-color: #D42727;
+    color: white;
+}
+#meng{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,.5);
+}
+#succese{
+    width: 100%;
+    padding-top: 30%;
+    padding-bottom: 60%;
+}
+#succese img{
+    width: 90%;
+    margin-left: 5%;
+}
+#knowBox{
+    margin-top: -45%;
+    text-align: center;
+}
+#knowBox h1{
+    font-size: 3em;
+    color: #666666;
+}
+#knowBox p{
+    margin-left: 5%;
+    width: 90%;
+    height: 50px;
+    margin-top: 3%;
+    font-size: 2.3em;
+    text-align: left;
+}
+#buttonBox{
+    margin-top: 10%;
+}
+#knowButton{
+    width: 70%;
+    height: 100px;
+    font-size: 2.3em;
+    background-color: #D42727;
+    color: white;
+}

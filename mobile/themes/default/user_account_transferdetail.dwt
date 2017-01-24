@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>明细</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/mui.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/recharge4.css">
+	<script type="text/javascript" src="__PUBLIC__/js/mui.min.js"></script>
+</head>
+<body>
+	<div id="all">
+		<header>
+			<div class="mui-row header_Cen">
+	            <div class="mui-icon mui-action-back mui-icon-left-nav mui-pull-left mui-col-xs-2">
+	            	</div>
+	            <div class="mui-col-xs-10">
+	                明细
+	            </div>
+			</div>
+		</header>
+		<section>
+			<div class="sectionCen_top">
+				<div class="mui-row sectionCen_top_Bot">
+					<div class="mui-col-xs-6">
+						<span>在线支付</span>
+						<p>余额: 0.26</p>
+					</div>
+					<div class="mui-col-xs-6">
+						<p>2016-12-12</p>
+						<span>-18.00</span>
+					</div>
+				</div>
+			</div>
+			<div class="sectionCen_Bot">
+				<div class="mui-row sectionCen_Bot_Bot">
+					<div class="mui-col-xs-6">
+						<span>充值到余额</span>
+						<p>余额: 9.26</p>
+					</div>
+					<div class="mui-col-xs-6">
+						<p>2016-12-12</p>
+						<span>+26.00</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+		</footer>
+	</div>
+
+</body>
+</html>

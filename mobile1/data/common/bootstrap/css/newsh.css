@@ -1,0 +1,82 @@
+#all{
+	width: 100%;
+	height: auto;
+	background: #efefef;
+	font-family: '微软雅黑';
+}
+.headerBox{
+	font-size: 1.1em;
+	background-color: rgb(255,255,255);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid#bfbfbf;
+}
+.headerBox div:nth-child(1){
+	position: absolute;
+	text-align: center;
+	font-size: 1.3em;
+	left: 5%;
+	top: 12px;
+	color: #727272;
+}
+.headerBox div:nth-child(2){
+	text-align: center;
+}
+section{
+	width: 100%;
+	height: auto;
+}
+.section{
+	width: 100%;
+	border-bottom: 1px solid#bfbfbf;
+}
+.sectionCen{
+	width: 90%;
+	line-height: 50px;
+	margin:0 auto;
+}
+.sectionCen div:nth-child(1) span{
+	font-size: 0.8em;
+	color: #000;
+	float: left;
+}
+.sectionCen div:nth-child(2) input{
+	height:50px;
+	padding:0 15px;
+	background: #efefef;
+	float: left;
+	font-size: 1em;
+	color: #ccc8c8;
+	border:none;
+	margin-top: 3px;
+	margin-bottom: 0px;
+
+}
+.sectionCen div:nth-child(3){
+	text-align: right;
+}
+.sectionCen div:nth-child(3) input{
+	width: 20px;
+	height: 20px;
+	margin-top: 13px;
+	background: #d32727;
+}
+footer{
+	width: 100%;
+	margin-top: 30px;
+}
+.foot{
+	width: 40%;
+	margin:0 auto;
+}
+.foot input{
+	display: inline-block;
+	width: 100%;
+	line-height: 50px;
+	background: #e4e4e4;
+	text-align: center;
+	color: #fff;
+	border-radius: 15px;
+	border: none;
+	font-size: 1.1em;
+}

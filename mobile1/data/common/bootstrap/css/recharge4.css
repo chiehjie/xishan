@@ -1,0 +1,68 @@
+#all{
+	width: 100%;
+	height: auto;
+	background: #efefef;
+	font-family: '微软雅黑';
+}
+header{
+	width: 100%;
+	line-height: 50px;
+	background: #fff;
+	border-bottom: 1px solid#bfbfbf;
+}
+.header_Cen{
+	width: 90%;
+	margin:0 auto;
+	font-size: 2.5em;
+}
+.header_Cen div:nth-child(1){
+	font-size: 0.7em;
+	color: #DB5656;
+	padding-top: 11px;;
+}
+.header_Cen div:nth-child(2){
+	font-size: 0.4em;
+	color: #333;
+}
+section{
+	width: 100%;
+	height: auto;
+	background: #fff;
+}
+.sectionCen_top,.sectionCen_Bot{
+	width: 100%;
+	border-bottom: 1px solid#bfbfbf;
+}
+.sectionCen_top_Bot,.sectionCen_Bot_Bot{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.sectionCen_top_Bot div:nth-child(1) span,.sectionCen_Bot_Bot div:nth-child(1) span{
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #333;
+	/*line-height: 40px;*/
+}
+.sectionCen_top_Bot div:nth-child(1) p,.sectionCen_Bot_Bot div:nth-child(1) p{
+	color: #666;
+	font-size: 0.6em;
+	font-weight: bold;
+}
+.sectionCen_top_Bot div:nth-child(2),.sectionCen_Bot_Bot div:nth-child(2){
+	text-align: right;
+}
+.sectionCen_top_Bot div:nth-child(2) span,.sectionCen_Bot_Bot div:nth-child(2) span{
+	font-size: 1.3em;
+	color: #333;
+}
+.sectionCen_top_Bot div:nth-child(2) p,.sectionCen_Bot_Bot div:nth-child(2) p{
+	color: #999;
+	font-size: 0.6em;
+	font-weight: bold;
+	/*line-height: 40px;*/
+}
+p{
+	margin-bottom: 0!important;
+}

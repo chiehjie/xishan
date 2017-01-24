@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的朋友</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/mui.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/myfirend.css">
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+    <script src="__PUBLIC__js/mui.js"></script>
+    <script type="text/javascript" src="__PUBLIC__js/jquery.charfirst.pinyin.js"></script>
+    <script type="text/javascript" src="__PUBLIC__js/sort.js"></script>
+</head>
+<body>
+<header>
+    <div class="mui-row headerBox">
+        <a href="#"><div class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></div></a>
+        <div>
+            我的朋友
+        </div>
+    </div>
+</header>
+<div class="section">
+    <span class="Location-boxOne">
+        <img src="images/search.png" alt="">
+    </span>
+    <form action="">
+        <input class="CommodityName" type="text" name="username" placeholder="搜索">
+    </form>
+</div>
+<div id="letter" ></div>
+<div class="sort_box">
+    <div class="sort_list">
+        <div class="num_logo">
+            <img src="images/touxiang.png" alt="">
+        </div>
+        <div class="num_name">郭芙蓉</div>
+        <div class="num_nameOne">123456678912</div>
+    </div>
+    <div class="sort_list">
+        <div class="num_logo">
+            <img src="images/touxiang.png" alt="">
+        </div>
+        <div class="num_name">郭孝敬</div>
+        <div class="num_nameOne">123456678912</div>
+    </div>
+    <div class="sort_list">
+        <div class="num_logo">
+            <img src="images/touxiang.png" alt="">
+        </div>
+        <div class="num_name">张三</div>
+        <div class="num_nameOne">123456678912</div>
+    </div>
+
+</div>
+<div class="initials">
+    <ul>
+        <li><img src="images/068.png"></li>
+    </ul>
+</div>
+</body>
+</html>

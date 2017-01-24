@@ -1,0 +1,95 @@
+*{
+    font-family: "微软雅黑";
+}
+.headerBox{
+    font-size: 2em;
+    background-color: rgb(255,255,255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D6D7D8;
+}
+.headerBox div:nth-child(1){
+    position: absolute;
+    text-align: center;
+    font-size: 1.3em;
+    left: 1%;
+    top: 9px;
+    color: #000;
+}
+.headerBox div:nth-child(2){
+    text-align: left;
+    color: #000;
+    text-indent: 57px;
+    font-size: 0.7em;
+    float: left;
+}
+.headerBox span{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+.mui-input-group .mui-input-row:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 15px;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background:none;
+}
+.mui-input-group {
+    position: relative;
+    padding: 20px;
+    border: 0;
+    margin-top: 10px;
+    background-color: #fff;
+}
+.mui-input-row label {
+    line-height: 1.1;
+    font-family: "微软雅黑";
+    float: left;
+    font-size: 1.2em;
+    width: 25%;
+    padding: 11px 0px;
+    font-weight: bold;
+}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea {
+    float: right;
+    width: 69%;
+    margin-bottom: 0;
+    padding-left: 0;
+    border: 0;
+    margin-top: 4px;
+}
+.mui-input-row .mui-input-clear~.mui-icon-clear, .mui-input-row .mui-input-password~.mui-icon-eye, .mui-input-row .mui-input-speech~.mui-icon-speech {
+    font-size: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 13px;
+    right: 0;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    color: #999;
+}
+.active{
+    display: inherit;
+    margin: auto;
+    padding: 10px 90px;
+    border: none;
+    font-size: 1.5em;
+    color: #BBBBBB;
+    background: #E4E4E4;
+    font-family: "微软雅黑";
+}
+.activeone{
+    display: inherit;
+    margin: auto;
+    padding: 10px 150px;
+    border: none;
+    font-size: 1.5em;
+    color: #ffffff;
+    background: red;
+}

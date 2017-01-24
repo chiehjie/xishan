@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/category.css"/>
+    <style>
+        #city_1{
+            vertical-align: middle;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            border: none;
+            outline: none;
+        }
+        select{
+            width: 50%;
+            font-size: .5em;
+            float: left;
+            border: none;
+            outline: none;
+            background-color: rgba(255,255,255,0);
+            /*去掉倒三角*/
+            /*appearance:none;*/
+            /*-moz-appearance:none;*/
+            /*-webkit-appearance:none;*/
+        }
+    </style>
+</head>
+<body>
+<header id="header">
+    <div class="row myRow">
+        <div class="col-xs-2 location" id="city_1">
+            <!--<span id="atCity">定位</span>-->
+            <select class="prov"></select>
+            <select class="city"></select>
+        </div>
+        <div class="col-xs-8 mySearch">
+        <form action="{:url('category/index')}<!-- {if $id} -->&id={$id}<!-- {/if} -->"  method="post" >
+            <span class="glyphicon glyphicon-search"></span>
+            <input type="search" class="myInput" name="keywords" placeholder="{$lang.no_keywords}">
+            </form>
+        </div>
+        <div class="col-xs-2 myImg">
+            <img  src="images/category_03.png" alt="">
+        </div>
+    </div>
+</header>
+<div class="row myBody" style="padding-bottom:30%">
+    <div class="col-xs-3">
+    <!--{foreach from=$category item=cat name=no}-->
+        <a href="{:url('category/index',array('id'=>$this->_var['cat']['id']))}"><div class="box">{$cat.name|escape:html}</div></a>
+       <!--{/foreach}-->   
+    </div>
+    <div class="col-xs-9 content" style="display: block">
+        <div class="myContent"><img src="images/bannar_03.png" alt=""/></div>
+     <!--    <div class="myLable">热卖</div> -->
+        <div class="myContainer">
+        
+          <!--{foreach from=$goods_list item=goods}-->
+    <!-- {if $goods.goods_id} -->
+            <div class="myBox">
+                <div class="myBox_img">
+                     <a href="{$goods.url}"><img src="{$goods.goods_img}" alt=""/></a>
+                </div>
+                <p>{$goods.goods_name}</p>
+            </div>
+            <!--{/if}-->
+    <!--{/foreach}-->
+
+        </div>
+    </div>
+   
+ </div>
+ 
+<div class="footer"  style="position:fixed;bottom:0;z-index:111;width:100%;background:#eee">
+    <a href="{:url('index/index')}">
+        <div class="myFooter">
+            <img src="images/images/icon7.png" alt=""/>
+            <p>首页</p>
+        </div>
+    </a>
+    <a href="{:url('category/index')}">
+        <div class="myFooter">
+            <img src="images/images/icon8.png" alt=""/>
+            <p>分类</p>
+        </div>
+    </a>
+    <a href="{:url('goodnews/index')}">
+        <div class="myFooter">
+            <img src="images/icon13.png" alt=""/>
+            <p>熹讯</p>
+        </div>
+    </a>
+    <a href="{:url('zhineng/index')}">
+        <div class="myFooter">
+            <img src="images/menu_icon4.png" alt=""/>
+            <p>智能</p>
+        </div>
+    </a>
+
+    <a href="{:url('user/index')}">
+        <div class="myFooter">
+            <img src="images/menu_icon5.png" alt=""/>
+            <p>我</p>
+        </div>
+    </a>
+</div> 
+<script src="__PUBLIC__/js/jquery-1.11.3.js"></script>
+<script src="__PUBLIC__/js/category.js"></script>
+<script type="text/javascript" src="__PUBLIC__/jquery.cityselect.js"></script>
+<script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
+<script>
+    $(function(){
+        var province = remote_ip_info['province'];//当前省
+        var city = remote_ip_info['city'];//当前市
+        var district = remote_ip_info['district'];//当前区/县
+
+        $("#city_1").citySelect({
+            prov: province,
+            city: city
+        });
+        //纯真IP库
+        $.get("ajax.php", function(data) {
+            $("#city_2").html(data);
+        })
+    });
+</script>
+</body>
+</html>

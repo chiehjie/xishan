@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta name="Generator" content="ECTouch 1.0" />
+	<title><?php echo $this->_var['page_title']; ?> 触屏版</title>
+	<meta name = "viewport" content="user-scalable=0"/>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/regist5.css">
+</head>
+<body>
+	<div id="all">
+		<div id="header">
+			<div class="top">
+				<div class="top_left">
+					<a href="javascript:window.history.back(-1);">
+						<img src="themes/default/images/back.png" alt="">
+					</a>
+				</div>
+				<div class="top_center">
+					<p>手机快速注册</p>
+				</div>
+				<div class="top_right">
+				</div>
+			</div>
+		</div>
+
+		<div id="content">
+			<div class="cont_top">
+				<p>恭喜您  注册成功</p>
+			</div>
+			<div class="cont_cen">
+				<img src="themes/default/images/success.png" alt="">
+			</div>
+			<div class="cont_bot">
+				<a href="<?php echo url('index/index');?>">立即进入商城</a>
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>

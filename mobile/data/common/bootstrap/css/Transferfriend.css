@@ -1,0 +1,117 @@
+*{
+    font-family: "微软雅黑";
+}
+.headerBox{
+    font-size: 2em;
+    background-color: rgb(255,255,255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D6D7D8;
+}
+.headerBox div:nth-child(1){
+    position: absolute;
+    text-align: center;
+    font-size: 1.3em;
+    left: 1%;
+    top: 9px;
+    color: #000;
+}
+.headerBox div:nth-child(2){
+    text-align: left;
+    color: #000;
+    text-indent: 57px;
+    font-size: 0.7em;
+    float: left;
+}
+.headerBox span{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+.jilu{
+    float: right;
+    position: relative;
+}
+
+
+.section{
+    width: 100%;
+    background: #FFF;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F6F6F6;
+}
+.Location-boxOne{
+    position: absolute!important;
+    top: 32px!important;
+    left: 28px;
+    color: #FFF;
+    z-index: 2;
+}
+.Location-boxOne img{
+    width: 100%;
+    margin-top: 48px;
+    margin-left: -11px;
+}
+.CommodityName {
+    padding-bottom: 20px!important;
+    position: relative;
+    width: 90%;
+    margin-bottom: 0!important;
+    font-size: 1.1em;
+    padding-top: 25px!important;
+    border: none!important;
+    color: #000;
+    text-indent: 48px;
+    -webkit-border-radius: .3em;
+    -moz-border-radius: .3em;
+    border-radius: .4em;
+}
+.Gd{
+    width: 17%;
+    margin-right: 20px;
+}
+.mui-table-view-cell a p {
+    margin-bottom: 0;
+    line-height: 43px;
+    font-size: 1.2em;
+}
+.text{
+    padding: 50px 0 10px 30px;
+    font-size: 1.3em;
+}
+.mui-table-view .mui-media-object {
+    line-height: 42px;
+    max-width: 50px;
+    margin-top: 5px;
+    height: 43px;
+}
+.mui-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    background-color: rgba(0,0,0,.3);
+}
+.mui-backdrop{
+    display: none;
+}
+.TransferRecord{
+    position: absolute;
+    top: 64px;
+    padding: 15px 30px;
+    background: #FFF;
+    right: 10px;
+    z-index: 100000;
+    border-radius: 5px;
+}
+.sanjiao{
+    position: absolute;
+    top: 51px;
+    right: 17px;
+}
+.TransferRecord{
+    display: none;
+    color:#000;
+}

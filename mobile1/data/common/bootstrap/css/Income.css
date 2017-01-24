@@ -1,0 +1,45 @@
+*{
+    font-family: "微软雅黑";
+}
+.headerBox{
+    font-size: 2em;
+    background-color: rgb(255,255,255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D6D7D8;
+}
+.headerBox div:nth-child(1) {
+    position: absolute;
+    text-align: center;
+    font-size: 1em;
+    left: 1%;
+    top: 14px;
+    color: #000;
+}
+.headerBox div:nth-child(2) {
+    text-align: left;
+    color: #000;
+    text-indent: 57px;
+    font-size: 0.6em;
+    float: left;
+}
+.headerBox span{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+.alingcenter {
+    text-align: center;
+    padding: 20px 0;
+}
+.a{
+    display: initial;
+    color: #A2A2A2;
+}
+.mui-left{
+    display: inline-table;
+}
+.mui-right{
+    display: inline-table;
+    float: right;
+}

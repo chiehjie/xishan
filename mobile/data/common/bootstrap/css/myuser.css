@@ -1,0 +1,407 @@
+*{
+    font-family: "微软雅黑";
+}
+.headerBox{
+    font-size: 1.2em;
+    background-color: rgb(255,255,255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.headerBox div:nth-child(1){
+    position: absolute;
+    text-align: center;
+    font-size: 1.3em;
+    left: 5%;
+    top: 11px;
+    color: #727272;
+}
+.headerBox div:nth-child(2){
+    text-align: center;
+}
+.u_gc{
+    margin-top: 12%;
+}
+.user_guocheng{
+    text-align: center;
+    font-size: 1em;
+}
+.u_jd{
+    margin-top: 9%;
+    padding-bottom: 1%;
+}
+.u_jd div{
+    float: left;
+}
+.u_yuan{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #CFCFCF;
+}
+.y_first{
+    margin-left: 8%;
+    background-color: #D42727;
+}
+.yt_first{
+    margin-left: 10%;
+}
+.u_x{
+    width: 21%;
+    height: 3px;
+    background-color: #CFCFCF;
+    margin-top: 1.5%;
+}
+.y_two{
+    background-color: #D42727;
+}
+.three_con{
+    background-color: white;
+    margin-top: 15%;
+}
+.icon_image{
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    /*padding-left: 4%;*/
+}
+.icon_image img{
+    width: 45%;
+}
+.input_box{
+    border-bottom: 2px solid #ECECEC;
+}
+.input_box input{
+    font-size: 1.2em;
+    border: none;
+    padding-top: 13%;
+    padding-bottom: 5%;
+    width: 65%;
+}
+.code_input{
+    float: left;
+}
+.u_code{
+    float: left;
+    width: 32%;
+    height: 40px;
+    background-color: #EFEFEF;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    margin-top: 15px;
+}
+.phone_code{
+    background-color: #d42727;
+    color: white;
+}
+.last_box{
+    padding-bottom: 5%;
+}
+.checkbox_input{
+    margin-left: 30%;
+    width: 30%;
+    height: 30px;
+    margin-top: 42%;
+}
+.agree{
+    font-size: 1em;
+    margin-top: 8%;
+    font-family: "微软雅黑";
+}
+.agree a{
+    color: black;
+}
+input[type='button']{
+    width: 100%;
+    background-color: #d42727;
+    color: white;
+    font-size: 1.1em;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 15%;
+}
+.u_idcard{
+    font-size: 1.1em;
+    margin-top: 7.5%;
+    padding-bottom: 7%;
+    color: #D1D1D1;
+    padding-left: 5%;
+}
+@media only screen and (max-width: 320px) and (min-width: 320px){
+    .u_text{
+        font-size: 0.7em;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 600px) and (min-width: 321px){
+    .u_text{
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+.img_box{
+    background-image: url("../images/agree/two_icon6.png");
+    background-size: 100%;
+}
+.img_box img{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.id_img{
+    margin-top: 5%;
+ }
+.first_imgbox{
+    margin-left: -3%;
+}
+.two_imgbox{
+    margin-left: 5%;
+}
+.two_button{
+    margin-left: 6%;
+}
+.button_img{
+    padding-bottom: 5%;
+}
+.two_next{
+    padding-bottom: 5%;
+}
+.bgcol{
+    margin-top: 10%;
+    background-color: white;
+    padding-bottom: 5%;
+}
+.htwo{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    color: #666666;
+    font-size: 1em;
+}
+.hthree{
+    font-size: 0.9em;
+    width: 100%;
+    text-align: center;
+    color: #999999;
+}
+.input {
+    display: inline-block;
+}
+.input:last-child {
+     border-right: 1px solid #999;
+ }
+.zfmm_con {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+}
+.bg_box{
+    background-color: #FBFBFB;
+}
+.pswd_show {
+    width: 80%;
+    height: 50px;
+    margin: 0 auto 0;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cfq {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    height: 50px;
+    font-size: 1.5em;
+    background-color: rgba(255,255,255,0);
+    border-top: 1px solid #e5e5e5;
+    border-right-width: 0;
+    border-bottom: 1px solid #e5e5e5;
+    border-left-width: 0;
+    padding-left: 7%;
+}
+.pswd_ipt {
+    height: auto;
+    overflow: auto;
+    width: 100%;
+    background-color: #fff;
+    font-size: 42px;
+}
+@media only screen and (max-width: 320px) and (min-width: 320px){
+    .ps_no, .ps_no1 {
+        width: 33%;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        float: left;
+        height: 45px;
+        border-bottom: 1px solid #e5e5e5;
+        font-size: 0.6em;
+    }
+    .bc_g{
+        font-size: 0.5em;
+    }
+    .del img{
+        width: 30%;
+    }
+    .cfq{
+        /*letter-spacing: 1.15em;*/
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 321px){
+    .ps_no, .ps_no1 {
+        width: 33%;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        float: left;
+        height: 60px;
+        border-bottom: 1px solid #e5e5e5;
+        font-size: 0.8em;
+    }
+    .bc_g{
+        font-size: 0.5em;
+    }
+    .del img{
+        width: 30%;
+    }
+    .cfq{
+        letter-spacing: 1.5em;
+    }
+}
+
+.b_b {
+    border-bottom: 1px solid #e5e5e5;
+}
+.b_r {
+    border-right: 1px solid #e5e5e5;
+}
+.mm_dot, .bg_box {
+    height: 50px;
+    width: 16.6%;
+    float: left;
+    line-height: 50px;
+    font-size: 1em;
+}
+
+.bg_box {
+    border-right: 1px solid #d9d9d9;
+    box-sizing: border-box;
+}
+.bg_con {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.zf_wjmm{
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 7%;
+    padding-top: 7%;
+}
+.mui-box{
+    text-align: center;
+}
+.ui-box{
+    margin-bottom: 10%;
+}
+/**/
+/*user_last.css*/
+.mui-box-container{
+    background-color: white;
+    height: 100px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mui-boxContainer{
+    background-color: white;
+    height: 100px;
+    margin-top: 10%;
+}
+.first_text{
+    margin-top: 5%;
+}
+.mui-mybox{
+    height: 100px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-text>p:nth-child(1){
+    font-size: 1em;
+    font-family: "微软雅黑";
+    color: black;
+}
+.content-text>p:nth-child(2){
+    margin-top: 3%;
+    font-size: 0.8em;
+    font-family: "微软雅黑";
+}
+.content-text>div:nth-child(2){
+    margin-top: 3%;
+}
+.box-height{
+    height: 150px;
+}
+#back_img{
+    background: url(../images/agree/two_icon7.png)no-repeat;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+}
+.text_box{
+    text-align: center;
+    color: #CB2B28;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+.text_two{
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    margin-top: 1%;
+}
+.section_box img:nth-child(3){
+    display: inherit;
+    margin: 20px auto;
+    width: 70%;
+}
+.section_box img:nth-child(4){
+    width: 15%;
+}
+.photo_box{
+    background-color: rgb(0,0,0);
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+}
+.mui-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    background-color: rgba(0,0,0,.3);
+}

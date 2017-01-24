@@ -1,0 +1,291 @@
+*{
+    font-family: "微软雅黑";
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+#header{
+}
+
+.Location-box{
+    top: 27px!important;
+    font-size: 1.7em;
+    color: #FFF;
+    float: left;
+}
+.Location-box-one{
+
+}
+.Location-box-one img{
+    width: 80px;
+    margin-top: 26px;
+}
+.Location-boxOne{
+    position: absolute!important;
+    top: 32px!important;
+    left: 28px;
+    color: #FFF;
+    z-index: 2;
+}
+
+.CommodityName{
+    position: relative;
+    width: 100%;
+    margin-top: 17px;
+    padding: .4em .1em;
+    font-size: 0.9em;
+    margin-left: 9px;
+    text-indent: 96px;
+    -webkit-border-radius: .3em;
+    color: #FFF!important;
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+    background: rgba(255,255,255,.3);
+    border: 1px solid #FFF;
+}
+.paddingnone{
+    padding: 0!important;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    height: 430px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 1em;
+    overflow: hidden;
+    z-index: 1;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.row{
+    margin-right: 0!important;
+    margin-left: 0!important;
+}
+.swiper-slide{
+    webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    flex-shrink: 0;
+    font-size: 7.5em;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.swiper-container-horizontal>.swiper-pagination{
+    bottom: -18px;
+    left: 0;
+    padding: 10px 10px;
+    font-size: 4.5em;
+    width: 100%;
+}
+.zindex{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+.swiper-pagination-bullet{
+    width:30px!important;
+    height: 30px !important;;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2;
+}
+.banner{
+    width: 100%;
+    height: 300px;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #FFF!important;
+    opacity: 0.5;
+}
+.Secontent ul a li dl{
+    font-size: 0.57em!important;
+    text-align: center;
+    color: #000;
+}
+.col-xs-2{
+    width: 20%!important;
+    padding: 0!important;
+}
+.Secontent ul a li span img{
+    width:53%;
+}
+#section{
+    background: #EFEFEF;
+    padding-bottom: 40px;
+    margin-top: 2px;
+}
+#sectionTwo{
+    padding: 30px 10px;
+}
+.height{
+    height: 470px!important;
+}
+.heightOne{
+    height: 223px!important;
+}
+#sectionThree h1{
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: bold;
+}
+#sectionThree div div dl{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+}
+#sectionFour h1{
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: bold;
+}
+#sectionThree{
+    padding: 20px 0;
+    background: #EFEFEF;
+}
+.active{
+    background: #E4E1E1;
+    padding: 30px 0;
+}
+.TextLeft{
+    width: 50%;
+    float: left;
+    padding: 40px 0;
+}
+.RightLeft{
+    width: 50%;
+    float: left;
+}
+#sectionFive div div div p{
+    font-size: 0.54em;
+    font-weight: bold;
+    text-align: center;
+}
+#sectionFive div div .RightLeft img{
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.activeOne{
+    background: #E4E1E1
+}
+.activeOne{
+    background: #FAF5F1;
+    padding: 30px 0;
+}
+.footer div{
+    float: left;
+}
+.myFooter{
+    padding-top: 3%;
+    width: 20%;
+    text-align: center;
+}
+.myFooter img{
+    width: 43%;
+}
+.footer a .myFooter p{
+    font-size: 0.9em;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 430px;
+    margin: 20px 0;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.Secontent .swiper-container .swiper-wrapper .swiper-slide ul{
+    width: 100%;
+}
+.swiper-slide-active{
+    background: #EFEFEF;
+}
+.swiper-slide-next{
+    background: #EFEFEF;
+}
+.swiper-slide{
+    background: #EFEFEF!important;
+}
+.position{
+    float: left;
+    font-size:0.9em;
+    margin-left: 35px;
+    margin-top: 36px;
+    color: #FFF;
+}
+a{
+    text-decoration: none;
+    color: black!important;
+    font-family: "微软雅黑";
+}

@@ -1,0 +1,99 @@
+*{
+	margin:0;
+	padding:0;
+}
+#all{
+	width: 100%;
+	height: auto;
+	background: #efefef;
+	font-family: '微软雅黑';
+}
+header{
+	width: 100%;
+	line-height: 50px;
+	background: #fff;
+	border-bottom: 1px solid#bfbfbf;
+}
+.header_Cen{
+	width: 90%;
+	margin:0 auto;
+}
+.header_Cen div:nth-child(1){
+    font-size: 1.6em;
+	color: #000;
+    padding-top: 11px;
+}
+.header_Cen div:nth-child(2){
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+section{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.section{
+	width: 90%;
+	height: 150px;
+	margin:0 auto;
+}
+.section ul{
+	width: 100%;
+	height: auto;
+}
+.section ul li{
+	width: 25%;
+	line-height: 35px;
+	margin-top:20px;
+	text-align: center;
+	box-sizing: border-box;
+	border:2px solid#000;
+	border-radius: 5px;
+	list-style: none;
+	float: left;
+	font-size: 0.9em;
+}
+.section ul li a{
+	color: #000;
+}
+.section ul .iil{
+	border:2px solid#d42727;
+}
+.section ul .iil a{
+	color:#d42727;
+}
+.section ul li:nth-child(2) a{
+	color: #afaeae;
+}
+.section ul li:nth-child(2){
+	margin:20px 10% 0;
+	border:2px solid#afaeae;
+}
+.sectionWord{
+	width: 90%;
+	height: 50px;
+	margin:0 auto;
+	font-size: 0.8em;
+	color: #9b9a9a;
+}
+footer{
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+}
+.foot{
+	width: 35%;
+	margin:0 auto;
+}
+.foot input{
+	display: inline-block;
+	width: 100%;
+	line-height: 35px;
+	background: #d32727;
+	color: #fff;
+	font-size: 1.1em;
+	text-align: center;
+	border-radius:5px;
+	border:none;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <title>{$page_title} 触屏版</title>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/mui.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/loan_last.css"/>
+</head>
+<body>
+    <header>
+        <div class="mui-row headerBox">
+            <a href="javascript:window.history.back(-1);"><div class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></div></a>
+            <div class="mui-col-xs-12">
+                身份验证
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="mui-row ui-box">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-10">
+                <div class="jindu">
+                    <p>身份验证</p>
+                    <p>详细信息</p>
+                    <p>授权进度</p>
+                </div>
+                <div class="guocheng">
+                    <div class="yuan"></div>
+                    <div class="henxian"></div>
+                    <div class="yuan"></div>
+                    <div class="henxian"></div>
+                    <div class="yuan"></div>
+                </div>
+            </div>
+            <div class="mui-col-xs-1"></div>
+        </div>
+        <div class="mui-row mui-box mui-box-container">
+            <div class="mui-col-xs-12 content-text">
+                <p>提交申请</p>
+                <p>个人信息和需求由系统提交等待审核...</p>
+            </div>
+        </div>
+        <div class="mui-row mui-box mui-mybox">
+            <div class="mui-col-xs-12">
+                <img src="images/kaihu/loan_8.png" alt=""/>
+            </div>
+        </div>
+        <div class="mui-col-xs-12 mui-box mui-box-container">
+            <div class="mui-col-xs-12 content-text">
+                <p>审核中</p>
+                <p>工作人员正在核实您的信息，请耐心等待...</p>
+            </div>
+        </div>
+        <div class="mui-row mui-box mui-mybox">
+            <div class="mui-col-xs-12">
+                <img src="images/kaihu/loan_9.png" alt=""/>
+            </div>
+        </div>
+        <div class="mui-col-xs-12 mui-box mui-box-container box-height">
+            <div class="mui-col-xs-12 content-text">
+                <p>申请成功</p>
+                <div id="succese">
+                    <img src="images/kaihu/loan_10.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="__PUBLIC__/js/mui.js"></script>
+</body>
+</html>

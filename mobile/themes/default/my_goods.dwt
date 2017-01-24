@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+	<title>product</title>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/mui.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/swiper.min.css">
+<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/pullToRefresh.css"/> 
+	<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/product.css">
+	<script type="text/javascript" src="__PUBLIC__/js/mui.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/swiper.min.js"></script>
+<script src="__PUBLIC__/js/iscroll.js"></script>
+<script src="__PUBLIC__/js/pullToRefresh.js"></script>
+<style type="text/css">
+	header{
+		position:fixed;
+		z-index: 3;
+		background-color: white;
+		color:black;
+	}
+</style>
+</head>
+<body>
+ <form action="javascript:addToCart({$goods.goods_id})" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY" >
+<div id="wrapper">
+<div id="all">
+	<header>
+		<div class="mui-row header_Cen">
+            <div class="mui-icon mui-action-back mui-icon-left-nav mui-pull-left mui-col-xs-2">
+            	</div>
+            <div class="mui-col-xs-8">
+            	<a class="apro" href="javascript:">商品</a>&nbsp
+            	<a href="javascript:">视频购物</a>
+            </div>
+            <div class="mui-col-xs-2">
+            	<a href="javascript:"><img src="images/img/fenb.png" alt=""></a>
+            </div>
+		</div>
+	</header>
+	 
+	<section>
+		<div class="swiper-container swiper1">
+		
+	        <div class="swiper-wrapper">
+	           
+	            <!--{if $pictures}--> 
+		        <!-- {foreach from=$pictures item=picture name=no}--> 
+		         <div class="swiper-slide banner"><a href="javascript:"><img src="{$picture.img_url}" alt="{$picture.img_desc}"></a></div>
+		        <!--{/foreach}-->
+		        <!--{else}-->
+		        
+		         <div class="swiper-slide banner">
+		         <a href="javascript:"><img src="{$goods.goods_img}" alt="{$goods.goods_name}"></a></div>
+		        <!--{/if}-->
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination swiper-pagination1"></div>
+	        <!-- Add Arrows -->
+	    </div>
+	    <div class="detail">
+	    	<div class="detailCen">
+	    		<p>{$goods.goods_style_name}</p>
+
+	    		 <p>
+	    		 <!--{if $goods.is_promote and $goods.gmt_end_time } 促销--> 
+			        {$goods.promote_price}
+			        <!--{else}-->
+			        {$goods.shop_price_formated}
+			        <!--{/if}-->
+			      </p>
+				
+				<s>价格{$goods.market_price}</s>
+				<p><!-- <span>快递:0.00 </span> --><small>月售: {$sales_count} {$lang.piece}</small> <!-- <span>四川成都</span> --></p>
+	    	</div>
+
+	    </div>
+	    <div class="promotion">
+	    	<div class="mui-row promotionCen">
+	    		<div class="mui-col-xs-2">
+	    			促销
+	    		</div>
+	    		<div class="mui-col-xs-10">
+	    			<p><small>满减</small> 满500.00减50.00</p>
+	    			<p><small>受限</small> 此价格不与套装优惠同时享受</p>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="chose">
+	    	<div class="mui-row choseCen">
+	    		<div class="mui-col-xs-2">
+	    			已选
+	    		</div>
+	    		<div class="mui-col-xs-8">
+	    			<p><small>经典白盘钢带</small> &nbsp<small>7062A9</small> &nbsp<small> 1件</small></p>
+	    		</div>
+	    		<div class="mui-col-xs-2">
+	    			<a class="diandian" href="javascript:">...</a>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="send">
+	    	<div class="mui-row sendCen">
+	    		<div class="mui-col-xs-2">
+	    			送至
+	    		</div>
+	    		<div class="mui-col-xs-10">
+	    			<p><small>四川</small><small>—成都市</small><small>—锦江区</small></p>
+	    			<p><small>现货</small> &nbsp23.00之前下单,预计明天(12月30日送达)</p>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="comment">
+	    	<div class="mui-row commentTop">
+	    		<div class="mui-col-xs-6">评论：</div>
+		    	<a href="{:url('goods/info',array('id'=>$this->_var['goods']['goods_id']))}">
+		    		<div class="mui-col-xs-6 mui-icon mui-icon-arrowright">
+		    		</div>
+	    		</a>
+	    	</div>
+	    	<div class="commentCen">
+	    		<div class="mui-row commentCen_top">
+	    			<div class="mui-col-xs-6">
+		    			<img src="images/img/star.png" alt="">
+		    			<img src="images/img/star.png" alt="">
+		    			<img src="images/img/star.png" alt="">
+		    			<img src="images/img/star.png" alt="">
+		    			<img src="images/img/star1.png" alt="">
+	    			</div>
+	    			<div class="mui-col-xs-6">s***5s</div>
+	    		</div>
+	    		<div class="commentCen_bot">
+	    			<p>东西不错，等了好几天了，快递真失望</p>
+	    			<img src="images/img/blcs.png" alt="">
+	    			<img src="images/img/xq.png" alt="">
+	    		</div>
+	    	</div>
+	    </div>
+
+		<!-- <div class="slide">
+			<a class="mui-icon mui-icon-arrowup" href="javascript:">点击查看商品详情</a><br/>
+			<img src="images/img/bigimg.png" alt="">
+
+		</div> -->
+
+	</section>
+	<footer>
+		<div class="mui-row footLeft">
+			<div class="mui-col-xs-4">
+				<a href="javascript:"><img src="images/img/service.png" alt=""><p>客服</p></a>
+			</div>
+			<div class="mui-col-xs-4">
+				<a href="javascript:"><img src="images/img/nostar.png" alt=""><p>收藏</p></a>
+			</div>
+			<div class="mui-col-xs-4">
+				<a href="javascript:"><img src="images/img/shopche.png" alt=""><small>2</small><p>购物车</p></a>
+			</div>
+		</div>
+		<div class="footRight">
+			<a href="javascript:"><input type="submit" value="加入购物车"></a>
+			<a href="javascript:"><input type="submit" value="立即购买"></a>
+		</div>
+	</footer>
+
+	<div id="hiden">
+		<div class="mask"></div>
+		<div class="hide">
+			<div class="hide_top mui-row">
+				<div class="mui-col-xs-3">
+					<img src="images/img/watch.png" alt="">
+				</div>
+				<div class="mui-col-xs-8">
+					<p><span>￥</span>1500</p>
+					<p>商品编号: 95536A</p>
+					<p>库存265件</p>
+				</div>
+				<div class="mui-col-xs-1">
+					<a class="false" href="javascript:">
+						<img src="images/img/false.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="hideCen">
+				<div class="hide_cen">
+					<p>颜色</p>
+					<ul>
+						<a href="javascript:">
+							<li class="lia">白盘&nbsp  钢带</li>
+						</a>
+						<a href="javascript:">
+							<li>白盘&nbsp  钢带</li>
+						</a>
+						<a href="javascript:">
+							<li>白盘&nbsp  钢带</li>
+						</a>
+						<a href="javascript:">
+							<li>白盘&nbsp  钢带</li>
+						</a>
+					</ul>
+				</div>
+			</div>
+			<div class="hideBot">
+				<div class="hide_bot mui-row">
+					<div class="mui-col-xs-7">数量</div>
+					<div class="mui-numbox mui-col-xs-5" data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+					  	<button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+					  	<input class="mui-numbox-input" type="number" />
+					  	<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ 		
+</div>
+</form>
+</body>
+</html>
+<script type="text/javascript">
+
+  var swiper1 = new Swiper('.swiper1', {
+        pagination: '.swiper-pagination1',
+        paginationClickable: true,
+        spaceBetween: 30,
+    });
+    
+ 	$(function(){
+		$('.slide').click(function(){
+			$('.slide img').slideDown('display','block');
+		})
+		$('.hide_cen ul a').click(function(){
+			$('.hide_cen ul a li').removeClass();
+
+
+			$('.hide_cen ul a li').eq($(this).index()).addClass('lia');
+		})
+
+		$('.false').click(function(){
+			$('#hiden').css('display','none');
+		})
+
+		$('.diandian').click(function(){
+			$('#hiden').css('display','block');
+		})
+	})		
+		
+// refresher.init({
+// 	id:"wrapper",
+// 	pullDownAction:Refresh,                                                            
+// 	pullUpAction:Load 																			
+// 	});																
+// function Refresh() {																
+// 	setTimeout(function () {	// <-- Simulate network congestion, remove setTimeout from production!
+// 		var el, li, i;																		
+// 		el =document.querySelector("#wrapper ul");					
+// 		//这里写你的刷新代码				
+// 		document.getElementById("wrapper").querySelector(".pullDownIcon").style.display="none";		
+// 		document.getElementById("wrapper").querySelector(".pullDownLabel").innerHTML="<img src='css/ok.png'/>刷新成功";																					 
+// 		setTimeout(function () {
+// 			wrapper.refresh();
+// 			document.getElementById("wrapper").querySelector(".pullDownLabel").innerHTML="";								
+// 			},1000);//模拟qq下拉刷新显示成功效果
+// 		/****remember to refresh after  action completed！ ---yourId.refresh(); ----| ****/
+// 	}, 1000);
+// }
+// function Load() {
+// 	setTimeout(function () {// <-- Simulate network congestion, remove setTimeout from production!
+// 		var el, li, i;
+// 		el =document.querySelector("#wrapper ul");
+// 		for (i=0; i<1; i++) {
+// 			li = document.createElement('li');
+// 			li.innerHTML="<img src='images/img/bigimg.png' alt='' style = 'width:100%;height:auto;'>"
+// 			el.appendChild(li, el.childNodes[0]);
+// 		return false;
+// 		}
+// 		wrapper.refresh();/****remember to refresh after action completed！！！   ---id.refresh(); --- ****/
+// 	},100);	
+// }
+</script>

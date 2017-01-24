@@ -1,0 +1,83 @@
+#all{
+	width: 100%;
+	height: auto;
+	background: #efefef;
+	font-family: '微软雅黑';
+}
+header{
+	width: 100%;
+	line-height: 50px;
+	background: #fff;
+	border-bottom: 1px solid#bfbfbf;
+}
+.headerCen{
+	width: 90%;
+	margin:0 auto;
+	font-size: 2em;
+}
+.headerCen div:nth-child(1){
+	font-size: 0.5em;
+}
+.headerCen div:nth-child(1) a{
+	color: #333;
+}
+.headerCen div:nth-child(2){
+	font-weight: bold;
+	font-size: 0.5em;
+	text-align: right;
+}
+.headerCen div:nth-child(2) a{
+	color: #DB5656;
+}
+section{
+	width: 100%;
+	height: auto;
+	background: #fff;
+}
+.section{
+	width: 90%;
+	height: auto;
+	margin:0 auto;
+	box-sizing: border-box;
+	border-bottom: 1px solid#bfbfbf;
+	text-align: center;
+}
+.section p{
+	font-size: 1em;
+	color:#DB5656;
+	padding-top: 30px;
+}
+.section span{
+	display: block;
+	font-size:2em;
+	color:#333;
+	font-family: 'Arial';
+	padding-bottom: 30px;
+	padding-top: 10px;
+}
+footer{
+	width: 100%;
+	height: 125px;
+	background: #fff;
+	border-bottom: 1px solid#bbb;
+}
+.foot{
+	width: 90%;
+	line-height: 125px;
+	margin:0 auto;
+}
+.foot div:nth-child(1){
+	font-size: 0.9em;
+	color:#999;
+}
+.foot div:nth-child(2){
+	font-size: 0.9em;
+	font-weight: 600;
+	color:#333;
+}
+.foot div:nth-child(3){
+	font-size: 1em;
+	color:#333;
+	text-align: right;
+	font-family: 'Arial';
+}

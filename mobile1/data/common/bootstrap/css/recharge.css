@@ -1,0 +1,76 @@
+#all{
+	width: 100%;
+	height: auto;
+	background: #efefef;
+	font-family: '微软雅黑';
+}
+header{
+	width: 100%;
+	height: auto;
+    background-color: #db5656;
+}
+.headerTop{
+	width: 90%;
+    line-height:100px;
+    margin:0 auto;
+    padding-bottom: 20px;
+    font-size: 2em;
+}
+.headerTop div:nth-child(1){
+    font-size: 1.2em;
+    color: white;
+	padding-top: 30px;
+}
+.headerTop a{
+	color: #fff;
+}
+.headerTop div:nth-child(2){
+    font-size: 0.7em;
+    text-align: center;
+    color: white;
+}
+.headerTop div:nth-child(3){
+    text-align: right;
+    font-size: 0.7em;
+    color: white;
+}
+.headerBot p{
+	width: 90%;
+	margin:0 auto;
+	line-height: 100px;
+	font-size: 1.5em;
+	color: #fff;
+}
+.headerBot p span{
+	font-size: 2.5em;
+}
+.sectionTop,.sectionBot{
+	width: 100%;
+	line-height: 100px;
+	border-bottom: 1px solid#bfbfbf;
+	font-size: 1.5em;
+	color: #333;
+}
+.sectionTop img,.sectionBot img{
+	vertical-align: middle;
+	padding-right: 20px;
+}
+.sectionTop_center,.sectionBot_center{
+	width: 90%;
+	margin:0 auto;
+}
+.sectionTop_center a,.sectionBot_center a{
+	color: #666;
+}
+.sectionTop_center div:nth-child(1),.sectionBot_center div:nth-child(1){
+	float: left;
+}
+.sectionTop_center div:nth-child(2),.sectionBot_center div:nth-child(2){
+	float: left;
+	padding-top: 37px;
+	font-size: 1.2em;
+	text-align: right;
+}
+.chongzhi img{
+	width: 25%;
+}

@@ -1,0 +1,154 @@
+*{
+    font-family: "微软雅黑";
+}
+.headerBox{
+    font-size: 3em;
+    background-color: rgb(255,255,255);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.headerBox div:nth-child(1){
+    position: absolute;
+    text-align: center;
+    font-size: 1.3em;
+    left: 5%;
+    top: 26px;
+    color: #000000;
+}
+.headerBox div:nth-child(2){
+    text-align: center;
+    font-size:1em;
+    color: #000;
+}
+.jindu{
+    margin-top: 15%;
+}
+.jindu p{
+    width: 33.3%;
+    float: left;
+    font-size: 2.6em;
+    text-align: center;
+}
+.jindu p:nth-child(1){
+    color: #D42727;
+}
+.jindu p+p{
+    text-align: center;
+}
+.guocheng{
+    margin-top: 25%;
+    margin-left: 12%;
+}
+.guocheng div{
+    float: left;
+}
+.yuan{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #CFCFCF;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.yuan:nth-child(1){
+    background-color: #D42727;
+    margin-left: 3%;
+}
+.henxian{
+    width: 33%;
+    height: 3px;
+    background-color: #CFCFCF;
+    margin-top: 1.5%;
+}
+.bgcolorone{
+    padding: 0 0 110px 0;
+}
+.bgcolortwo{
+    background: #FFF;
+    padding: 60px 40px;
+}
+.bordernone{
+    border: 0!important;
+    height: 72px!important;
+    font-size: 3em!important;
+    border-bottom: 2px solid gray!important;
+}
+.relative{
+    position: relative;
+}
+.positive{
+    position: absolute;
+    top: -36px;
+    right: 0;
+    width: 250px;
+    height: 100px;
+    background: gray;
+}
+.relativeOne{
+    position: relative;
+}
+.positiveOne{
+    position: absolute;
+    top: -36px;
+    right: 0;
+    width: 250px;
+    height: 100px;
+    background: #D42727;
+    line-height: 100px;
+    text-align: center;
+    font-size: 2.3em;
+    color: #fff;
+}
+/*
+复选框美化*/
+
+label {
+    font-size: 12px;
+    cursor: pointer;
+    float: left;
+}
+input[type="checkbox"],input[type="radio"] {display:none;}
+input[type="radio"] + i {border-radius:7px;}
+input[type="checkbox"]:checked + i,input[type="radio"]:checked + i {background:#2489c5;}
+input[type="checkbox"]:disabled + i,input[type="radio"]:disabled + i {border-color:#ccc;}
+input[type="checkbox"]:checked:disabled + i,input[type="radio"]:checked:disabled + i {background:#ccc;}
+label i{
+    font-size: 3.9em;
+    font-style: normal;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    color: #EFEFF4;
+    vertical-align: middle;
+    margin: -1px 2px 1px 0px;
+    border: #2489c5 2px solid;
+}
+/*  */
+.bgcolorthree div div p span{
+    font-size: 3.2em;
+    float: left;
+    margin-top: 11px;
+    margin-left:15px;
+    color: #000;
+}
+.bgcolorthree{
+    padding: 60px 40px;
+}
+.colors{
+    padding: 40px 390px!important;
+    font-size: 3em!important;
+    margin: auto;
+    display: inherit!important;
+}
+.mui-btn-danger, .mui-btn-negative, .mui-btn-red {
+    color: #fff!important;
+    border: 1px solid #dd524d!important;
+    background-color: #dd524d!important;
+}
+.mui-btn-danger.mui-active:enabled, .mui-btn-danger:enabled:active, .mui-btn-negative.mui-active:enabled, .mui-btn-negative:enabled:active, .mui-btn-red.mui-active:enabled, .mui-btn-red:enabled:active {
+    color: #fff!important;
+    border: 1px solid #cf2d28!important;
+    background-color: #cf2d28!important;
+}

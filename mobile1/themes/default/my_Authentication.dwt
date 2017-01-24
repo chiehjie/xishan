@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0, user-scalable=no">
+    <title>{$page_title} 触屏版</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/Authentication.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/mui.min.css">
+    <script src="__PUBLIC__/js/jquery-1.11.3.js"></script>
+    <!--<script src="js/mui.js"></script>-->
+</head>
+<body>
+<header>
+    <div class="mui-row headerBox">
+        <a href="me.html">
+            <div class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></div>
+        </a>
+        <div class="mui-col-xs-12">
+            授权进度
+        </div>
+    </div>
+</header>
+<section class="bgcolorone">
+        <div class="mui-row">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-10">
+                <div class="jindu">
+                    <p>身份验证</p>
+                    <p>详细信息</p>
+                    <p>授权进度</p>
+                </div>
+                <div class="guocheng">
+                    <div class="yuan"></div>
+                    <div class="henxian"></div>
+                    <div class="yuan"></div>
+                    <div class="henxian"></div>
+                    <div class="yuan"></div>
+                </div>
+            </div>
+            <div class="mui-col-xs-1"></div>
+        </div>
+</section>
+<section class="bgcolortwo">
+    <div class="mui-row">
+        <div class="mui-col-xs-12 list">
+            <p>提交申请</p>
+            <p>个人信息和需求由系统提交等待审核...</p>
+        </div>
+    </div>
+</section>
+<section class="bgcolorthree">
+    <div class="mui-row">
+        <div class="mui-col-xs-12">
+            <span class="Arrow">
+                <img src="images/jiantou1.png" alt="">
+            </span>
+        </div>
+    </div>
+</section>
+<section class="bgcolortwo">
+    <div class="mui-row">
+        <div class="mui-col-xs-12 list">
+            <p>审核中</p>
+            <p>工作人员正在核实您的信息，请耐心等待...</p>
+        </div>
+    </div>
+</section>
+<section class="bgcolorthree">
+    <div class="mui-row">
+        <div class="mui-col-xs-12">
+            <span class="Arrow">
+                <img src="images/jiantou2.png" alt="">
+            </span>
+        </div>
+    </div>
+</section>
+<section class="bgcolortwo">
+    <div class="mui-row">
+        <div class="mui-col-xs-12 list">
+            <p>申请成功</p>
+             <span class="Arrow">
+                <img style="margin-top: 60px" src="images/gou.png" alt="">
+            </span>
+        </div>
+    </div>
+</section>
+<script src="__PUBLIC__/js/mui.js"></script>
+</body>
+</html>

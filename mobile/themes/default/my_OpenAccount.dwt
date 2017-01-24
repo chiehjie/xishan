@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0, user-scalable=no">
+    <title>{$page_title} 触屏版</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/OpenAccount.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/mui.min.css">
+    <script src="__PUBLIC__/js/jquery-1.11.3.js"></script>
+    <script src="__PUBLIC__/js/mui.js"></script>
+</head>
+<body>
+<header>
+    <div class="mui-row headerBox">
+        <a href="javascript:window.history.back(-1);"><div class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></div></a>
+        <div class="mui-col-xs-12">
+            开户
+        </div>
+    </div>
+</header>
+<section>
+    <div class="mui-row banner">
+        <div class="mui-col-xs-12">
+            <img src="images/shoubanner.png" alt="">
+        </div>
+    </div>
+</section>
+<section>
+    <div class="bgcolor">
+        <div class="mui-row">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">银行卡</a>
+                    <div class="mui-collapse-content">
+                        <div class="mui-row">
+                            <div class="mui-col-xs-3">
+                                <a href="{:url('user/my_OpeningAccount')}" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/zhongguo.png" alt="">
+                                    </div>
+                                    <dl>中国银行</dl>
+                                </a>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/gongshang.png" alt="">
+                                    </div>
+                                    <dl>工商银行</dl>
+                                </a>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/jianshe.png" alt="">
+                                    </div>
+                                    <dl>建设银行</dl>
+                                </a>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/nongye.png" alt="">
+                                    </div>
+                                    <dl>农业银行</dl>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mui-row">
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/jiaotong.png" alt="">
+                                    </div>
+                                    <dl>交通银行</dl>
+                                </a>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/youzheng.png" alt="">
+                                    </div>
+                                    <dl>邮政银行</dl>
+                                </a>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/zhaoshang.png" alt="">
+                                    </div>
+                                    <dl>招商银行</dl>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">信用卡</a>
+                    <div class="mui-collapse-content">
+                        <div class="mui-row">
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/pingan.png" alt="">
+                                    </div>
+                                    <dl>平安银行</dl>
+                                </a>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/huaxia.png" alt="">
+                                    </div>
+                                    <dl>华夏银行</dl>
+                                </a>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/xingye.png" alt="">
+                                    </div>
+                                    <dl>兴业银行</dl>
+                                </a>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/zhaoshang.png" alt="">
+                                    </div>
+                                    <dl>招商银行</dl>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">证劵</a>
+                    <div class="mui-collapse-content">
+                        <div class="mui-row">
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/pingan.png" alt="">
+                                    </div>
+                                    <dl>平安证劵</dl>
+                                </a>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/zhongzheng.png" alt="">
+                                    </div>
+                                    <dl>中银国际证劵</dl>
+                                </a>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/huaxi.png" alt="">
+                                    </div>
+                                    <dl>华西证劵</dl>
+                                </a>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/zhaozheng.png" alt="">
+                                    </div>
+                                    <dl>招商证劵</dl>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">保险</a>
+                    <div class="mui-collapse-content">
+                        <div class="mui-row">
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/pingan.png" alt="">
+                                    </div>
+                                    <dl>平安保险</dl>
+                                </a>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/taikang.png" alt="">
+                                    </div>
+                                    <dl>泰康保险</dl>
+                                </a>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/sss.png" alt="">
+                                    </div>
+                                    <dl>中国人寿保险</dl>
+                                </a>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <a href="#" style="margin: auto;">
+                                    <div class="content">
+                                        <img src="images/taiping.png" alt="">
+                                    </div>
+                                    <dl>太平保险</dl>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">现货</a>
+                    <div class="mui-collapse-content">
+                        <div class="mui-row">
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+</body>
+</html>

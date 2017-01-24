@@ -1,0 +1,108 @@
+<?php
+$data = array (
+  0 => 
+  array (
+    'cat_id' => '74',
+    'cat_name' => '其他分类',
+    'measure_unit' => '1000000000000',
+    'parent_id' => '0',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '1',
+    'has_children' => '0',
+    'goods_num' => '5',
+  ),
+  1 => 
+  array (
+    'cat_id' => '77',
+    'cat_name' => 'LOGO',
+    'measure_unit' => '999999999',
+    'parent_id' => '0',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '10',
+    'sort_order' => '1',
+    'has_children' => '0',
+    'goods_num' => '1',
+  ),
+  2 => 
+  array (
+    'cat_id' => '76',
+    'cat_name' => 'APP',
+    'measure_unit' => '999999999',
+    'parent_id' => '0',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '10',
+    'sort_order' => '2',
+    'has_children' => '0',
+    'goods_num' => '6',
+  ),
+  3 => 
+  array (
+    'cat_id' => '78',
+    'cat_name' => 'VI',
+    'measure_unit' => '999999999',
+    'parent_id' => '0',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '10',
+    'sort_order' => '3',
+    'has_children' => '0',
+    'goods_num' => '1',
+  ),
+  4 => 
+  array (
+    'cat_id' => '79',
+    'cat_name' => '新微商城',
+    'measure_unit' => '999999999',
+    'parent_id' => '0',
+    'is_show' => '1',
+    'show_in_nav' => '1',
+    'grade' => '0',
+    'sort_order' => '4',
+    'has_children' => '0',
+    'goods_num' => '1',
+  ),
+  5 => 
+  array (
+    'cat_id' => '80',
+    'cat_name' => 'POS',
+    'measure_unit' => '999999999',
+    'parent_id' => '0',
+    'is_show' => '1',
+    'show_in_nav' => '1',
+    'grade' => '0',
+    'sort_order' => '5',
+    'has_children' => '0',
+    'goods_num' => '1',
+  ),
+  6 => 
+  array (
+    'cat_id' => '81',
+    'cat_name' => '摄像头',
+    'measure_unit' => '999999999',
+    'parent_id' => '0',
+    'is_show' => '1',
+    'show_in_nav' => '1',
+    'grade' => '0',
+    'sort_order' => '6',
+    'has_children' => '0',
+    'goods_num' => '1',
+  ),
+  7 => 
+  array (
+    'cat_id' => '75',
+    'cat_name' => '自助烤肉',
+    'measure_unit' => '100000000000',
+    'parent_id' => '0',
+    'is_show' => '0',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+);
+?>

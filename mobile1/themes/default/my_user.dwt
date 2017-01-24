@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<head>
+    <meta charset="UTF-8">
+    <title>{$page_title} 触屏版</title>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/me.css"/>
+</head>
+<body>
+<div class="col-xs-12 myNav">
+    <p>个人中心</p>
+</div>
+<div class="col-xs-12 bgImg">
+    <img src="images/g.png" alt=""/>
+</div>
+<div class="col-xs-12 myBody">
+    <div class="userName">
+        <div class="col-xs-12 touxiang">
+            <div class="myimg"><img src="images/touxiang.jpg" alt=""/></div>
+        </div>
+        <a href="{:url('user/profile')}">
+        <div class="username"><h4>{$info.username} </a>| <a href="{:url('user/logout')}" class="ect-colorf">{$lang.label_logout}</a></h4></div>
+        <div id="idBox">
+            <p>实名认证</p>
+        </div>
+        <div class="myMoney moneyFirst">
+            <div class="contant">
+                <a href="{:url('user/not_pay_order_list')}">
+                    <p class="money">{$lang.not_pay_list}</p>
+                    <div class="money xi">
+                       <img src="images/kaihu/daifukuan.png" alt=" "/>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="fenge"></div>
+            <div class="contant">
+                <a href="{:url('user/order_list')}">
+                    <p class="money">{$lang.order_list_lnk}</p>
+                    <div class="money shou">
+                        <img src="images/kaihu/gouwuche.png" alt=" "/>
+                    </div>
+                </a>
+            </div>
+            <div class="fenge"></div>
+            <div class="contant">
+                <p class="money">待评价</p>
+                <div class="money">
+                    <img src="images/kaihu/daipingjia.png" alt=" "/>
+                </div>
+            </div>
+            <div class="fenge"></div>
+            <div class="contant">
+                <p class="money">退货</p>
+                <div class="money shang">
+                    <img src="images/kaihu/tuihuo.png" alt=" "/>
+                </div>
+            </div>
+        </div>
+        <div class="myMoney moneybox">
+            <div class="contant">
+                <p class="money">货款金额</p>
+                <div class="money">0.00</div>
+            </div>
+            <div class="fenge"></div>
+            <div class="contant">
+                <p class="money">信用额度</p>
+                <div class="money">0.00</div>
+            </div>
+            <div class="fenge"></div>
+            <div class="contant">
+               <a href="{:url('user/account_raply')}"> <p class="money">熹币中心</p></a>
+                 <!--{foreach from=$user_money item=user_money}--> 
+                <div class="money">{$user_money.user_money}</div>
+                 <!--{/foreach}--> 
+            </div>
+            <div class="fenge"></div>
+            <div class="contant">
+                <p class="money">购物车</p>
+                <div class="money">0.00</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 myIcon linefirst">
+        <div class="fontImg">
+            <a href="{:url('user/xuanzhezhifufangshi')}">
+            <img src="images/icon1.png" alt=""/>
+            <p>充值</p>
+            </a>
+        </div>
+        <div class="fontImg">
+        <a href="#">
+            <img src="images/icon2.png" alt=""/>
+            <p>商城</p>
+            </a>
+        </div>
+        <div class="fontImg">
+        <a href="{:url('user/account_transfer')}">
+            <img src="images/icon3.png" alt=""/>
+            <p>转账</p>
+            </a>
+        </div>
+        <a href="{:url('user/my_loan')}">
+            <div class="fontImg">
+                <img src="images/icon4.png" alt=""/>
+                <p>贷款</p>
+            </div>
+        </a>
+        <a href="{:url('user/my_OpenAccount')}">
+            <div class="fontImg">
+                <img src="images/icon5.png" alt=""/>
+                <p>开户</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-xs-12 myIcon">
+        <div class="fontImg">
+            <img src="images/icon6.png" alt=""/>
+            <p>订单查询</p>
+        </div>
+        <div class="fontImg">
+            <img src="images/icon7.png" alt=""/>
+            <p>商品商城</p>
+        </div>
+        <div class="fontImg">
+            <img src="images/icon8.png" alt=""/>
+            <p>社区服务</p>
+        </div>
+        <div class="fontImg">
+            <img src="images/icon9.png" alt=""/>
+            <p>客服服务</p>
+        </div>
+        <div class="fontImg">
+            <img src="images/icon10.png" alt=""/>
+            <p>城市服务</p>
+        </div>
+    </div>
+    <div class="col-xs-12 myIcon">
+        <div class="fontImg">
+            <img src="images/icon11.png" alt=""/>
+            <p>宽带</p>
+        </div>
+        <div class="fontImg">
+            <img src="images/icon12.png" alt=""/>
+            <p>银行卡</p>
+        </div>
+        <div class="fontImg">
+            <img src="images/icon13.png" alt=""/>
+            <p>出行</p>
+        </div>
+        <div class="fontImg">
+            <img src="images/icon14.png" alt=""/>
+            <p>证卷</p>
+        </div>
+        <div class="fontImg">
+            <img src="images/icon15.png" alt=""/>
+            <p>加油服务</p>
+        </div>
+    </div>
+    <div class="myline firstLine"></div>
+    <div class="col-xs-12 myList">
+        <div class="listing">
+            <img src="images/me_1.png" alt=""/>
+            <span>我的会员</span>
+            <img src="images/icon24.png">
+        </div>
+        <div class="line"></div>
+         <a href="{:url('user/share')}"><div class="listing">
+            <img src="images/me_2.png" alt=""/>
+            <span>我的分享</span>
+            <img src="images/icon24.png">
+        </div></a>
+        <div class="line"></div>
+        <div class="listing">
+            <img src="images/me_3.png" alt=""/>
+            <span>我要赚钱</span>
+            <img src="images/icon24.png">
+        </div>
+        <div class="line"></div>
+        
+		<a href="{:url('user/edit_password')}">
+		<div class="listing">
+		<img src="images/icon19.png" alt=""/>
+            <span>修改密码</span>
+            <img src="images/icon24.png">
+			</div>
+		</a>
+            
+        
+        <div class="line"></div>
+        <div class="listing">
+            <img src="images/icon20.png" alt=""/>
+            <span>关于我们</span>
+            <img src="images/icon24.png">
+        </div>
+        <div class="line"></div>
+        <div class="listing">
+            <img src="images/icon21.png" alt=""/>
+            <span>提交建议</span>
+            <img src="images/icon24.png">
+        </div>
+        <div class="line"></div>
+        <div class="listing">
+            <img src="images/icon22.png" alt=""/>
+            <span>检查更新</span>
+            <img src="images/icon24.png">
+        </div>
+        <div class="line"></div>
+        <div class="listing lat">
+            <img src="images/icon23.png" alt=""/>
+            <span>退&nbsp;&nbsp;出</span>
+            <img src="images/icon24.png">
+        </div>
+        <div class="line"></div>
+    </div>
+</div>
+<!-- #BeginLibraryItem "/library/footer.lbi" --><!-- #EndLibraryItem --> 
+<script src="__PUBLIC__/js/jquery-1.11.3.js"></script>
+<script src="__PUBLIC__/js/bootstrap.js"></script>
+</body>
+</html>

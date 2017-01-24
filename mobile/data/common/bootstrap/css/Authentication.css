@@ -1,0 +1,92 @@
+*{
+    font-family: "微软雅黑";
+}
+.headerBox{
+    font-size: 3em;
+    background-color: rgb(255,255,255);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.headerBox div:nth-child(1){
+    position: absolute;
+    text-align: center;
+    font-size: 1.3em;
+    left: 5%;
+    top: 26px;
+    color: #000000;
+}
+.headerBox div:nth-child(2){
+    text-align: center;
+    font-size:1em;
+    color: #000;
+}
+
+.jindu{
+    margin-top: 15%;
+}
+.jindu p{
+    width: 33.3%;
+    float: left;
+    font-size: 2.6em;
+    text-align: center;
+}
+.jindu p:nth-child(3){
+    color: #D42727;
+}
+.jindu p+p{
+    text-align: center;
+}
+.guocheng{
+    margin-top: 25%;
+    margin-left: 12%;
+}
+.guocheng div{
+    float: left;
+}
+.yuan{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #D42727;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.yuan:nth-child(1){
+    background-color: #D42727;
+    margin-left: 3%;
+}
+.henxian{
+    width: 33%;
+    height: 3px;
+    background-color: #D42727;
+    margin-top: 1.5%;
+
+}
+.list p:nth-child(1){
+    text-align: center;
+    font-size: 3.2em;
+    color: #000;
+}
+.bgcolorone{
+    padding: 0 0 110px 0;
+}
+.bgcolortwo{
+    background: #FFF;
+    padding: 60px 0;
+}
+.bgcolorthree{
+    padding: 60px 0;
+}
+.list p:nth-child(2){
+    text-align: center;
+    font-size: 2.5em;
+    padding: 60px 0 0 0;
+}
+.Arrow {
+    display: inherit;
+}
+img {
+    border: 0;
+    margin: auto;
+    display: inherit;
+}

@@ -1,0 +1,282 @@
+#all{
+	width: 100%;
+	height: auto;
+	background: #efefef;
+	font-family: '微软雅黑';
+}
+
+header{
+	width: 100%;
+	line-height: 50px;
+	background: #fff;
+	border-bottom: 1px solid#bfbfbf;
+}
+.header_Cen{
+	width: 90%;
+	margin:0 auto;
+
+}
+.header_Cen div:nth-child(1){
+	text-align: left;
+/*	-webkit-font-size:0.7em;
+    font-size: 2em;*/
+	color: #000;
+}
+.header_Cen div:nth-child(2){
+	text-align: center;
+    font-size: 1.3em;
+    color: #333;
+}
+.header_Cen div:nth-child(3){
+	text-align: right;
+}
+.sectionTop,.sectionBot{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	margin-top: 20px;
+	border-top: 1px solid#bfbfbf;
+	border-bottom: 1px solid#bfbfbf;
+}
+.sectionCen{
+	width: 90%;
+	margin:0 auto;
+	padding:30px 0;
+}
+.sectionCen img{
+	width: 90%;
+	height: auto;
+	margin:0 auto;
+}
+/*.sectionCen div:nth-child(1){
+	line-height: 330px;
+}*/
+.sectionCen div:nth-child(1) input{
+	width: 60%;
+	height: 40px;
+	margin:30px auto;
+	background: #d32727;
+}
+.sectionCen p{
+	font-size: 0.75em;
+	line-height: 20px;
+}
+.sectionCen_xia{
+	line-height: 20px;
+	padding-left: 2%;
+	background: #e8e7e7;
+	font-size: 0.8em;
+	color: #a5a4a4;
+}
+.sectionCen_xia small{
+	font-size: 1.8em;
+	float: right;
+	padding-right: 2%;
+}
+.sectionCen_mo{
+	margin-top: 15px;
+}
+.sectionCen_mo span{
+	display: inline-block;
+/*	font-size: 3em;*/
+	font-family: 'Arial';
+	color: #d32727;
+}
+.sectionCen_mo span small{
+/*	font-size: 0.8em;*/
+	font-family: '微软雅黑';
+}
+.sectionCen_mo div{
+	margin-top: -5px;
+	float: right;
+}
+.mui-numbox {
+    width: 65%;
+    height:30px;
+    background-color: #efeff4;
+    border:none;
+    color: #2a2a2c;
+}
+.mui-numbox [class*=numbox-btn] {
+    font-size: 1em;
+    width: 32.5%;
+    line-height: 0;
+    color: #fff;
+    background-color: #bcbcbc;
+}
+.mui-numbox [class*=numbox-btn-plus]{
+	background:  #d32727;
+}
+.mui-numbox .mui-numbox-input{
+	width: 200%;
+	height: 30px;
+	background:  #EFEFF4;
+	border:none;
+	font-size: 0.7em;
+}
+footer{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom:0;
+}
+.footTop{
+	width: 100%;
+	line-height: 80px;
+	background: #fff;
+	border-top: 2px solid#bfbfbf;
+	border-bottom:2px solid#bfbfbf;
+}
+.footCen,.footBot_cen{
+	width: 90%;
+	margin:0 auto;
+}
+.footCen div:nth-child(1) input{
+	width: 15%;
+	height: 15px;
+	background: #d32727;
+	display: inline-block;
+	margin-top: 10px;
+}
+.footCen div:nth-child(1) span{
+	/*font-size: 2.5em;*/
+	color: #000;
+}
+.footCen div:nth-child(2) span{
+	color: #d32727;
+	font-size:1em;
+}
+.footCen div:nth-child(2) input{
+	float: right;
+	width: 40%;
+	line-height: 25px;
+	margin-top:20px;
+	background: #d32727;
+/*	font-size: 2.5em;*/
+	color:#fff;
+	text-align: center;
+	border:2px solid#d32727;
+	border-radius:5px;
+}
+.footBot{
+	width: 100%;
+	height: 80px;
+	background: #fff;
+}
+.footBot ul li{
+	width: 20%;
+	height: 80px;
+	text-align: center;
+	float: left;
+	list-style: none;
+	font-size: 2em;
+}
+.footBot ul li span{
+	font-size: 2em;
+	color:#999;
+}
+.footBot ul li p{
+	font-size: 1em;
+	color:#999;
+}
+
+
+.footBot_cen div{
+    float: left;
+}
+.myFooter{
+    padding-top: 3%;
+    width: 20%;
+    text-align: center;
+}
+.myFooter img{
+    width: 50%;
+}
+.myFooter p{
+    font-size: 1.1em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#hide,#hide2{
+	display: none;
+}
+.mask{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 98;
+    background-color: rgba(0,0,0,.6);
+}
+#hiden{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	z-index:99; 
+}
+.hide_top{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid#868686;
+	position: relative;
+}
+.hide_cen{
+	width: 90%;
+	margin:0 auto;
+}
+.hide_top div:nth-child(1) img{
+	width: 90%;
+	height: auto;
+	margin:0 auto 10px;
+}
+.hide_top div:nth-child(2) span{
+	font-size: 1.5em;
+	color: #d32727;
+	display: inline-block;
+	line-height: 40px;
+}
+.hide_top div:nth-child(2) p{
+	font-size: 1em;
+	color: #6f6f6f;
+	line-height: 10px;
+}
+.hide_top a{
+	text-align: right;
+	font-size: 2em;
+}
+.hide_cen{
+	overflow: hidden;
+	padding-top: 5%;
+}
+.hide_cen ul{
+	padding:0;
+}
+.hide_cen ul li{
+	margin:5% 5% 10% 0;
+	width: 20%;
+	line-height: 35px;
+	background: #e3e3e3;
+	float: left;
+	list-style: none;
+	border-radius: 5px;
+	color: #202020;
+	font-size: 0.8em;
+	text-align: center;
+}
+.hide_cen ul .tli{
+	background: #d32727!important;
+	color: #fff;
+}
+.hide_bot{
+	width: 100%;
+}
+.hide_bot input{
+	width: 100%;
+	background: #d32727;
+	border:none;
+}

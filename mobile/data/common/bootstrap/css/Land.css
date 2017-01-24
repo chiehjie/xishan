@@ -1,0 +1,140 @@
+﻿*{
+    font-family: "微软雅黑"!important;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+
+
+.bgImg{
+    width: 100%;
+    height: 100%;
+    background: url(../images/Land.png) no-repeat;
+    background-size: cover;
+    display: inherit;
+}
+.mui-input-group:before{
+    height: 0;
+}
+body {
+    font-family: 'Helvetica Neue',Helvetica,sans-serif;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000;
+    background-color: #C88A3F!important;
+    -webkit-overflow-scrolling: touch;
+}
+.mui-input-group{
+    position: relative;
+    padding: 5px 12px;
+    top: 225px;
+    border: 0;
+    background: none;
+}
+.mui-input-group:after{
+    height: 0;
+}
+.mui-input-group .mui-input-row{
+    height: 60px;
+    margin-bottom: 30px;
+    line-height: 60px;
+    border-radius: 19px;
+    background: rgba(0,0,0,0.2);
+}
+.mui-input-row label {
+    font-family: 'Helvetica Neue',Helvetica,sans-serif;
+    width: 35%;
+    float: none;
+    line-height: 50px;
+    padding: 11px 12px;
+    color: #FFF;
+}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{
+    float: none;
+    width: 65%;
+    margin-bottom: 0;
+    padding-left: 0;
+    color: #FFF;
+    border: 0;
+    background: none;
+    outline: inherit;
+}
+.mui-input-group .mui-input-row:after{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 15px;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background:none;
+}
+.ForgetPassword{
+    width: 100%;
+    display: inline-table;
+}
+.mui-left{
+    float: left;
+    color: #FFFFFF;
+}
+.mui-right{
+    float: right;
+    color: #FFFFFF;
+}
+.mui-btn-danger, .mui-btn-negative, .mui-btn-red{
+    color: #fff;
+    border: 1px solid #dd524d;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 1.5em;
+    border-radius: 14px;
+    background-color: #dd524d;
+}
+.list div a label{
+    text-align: center;
+    display: inherit;
+}
+.list div a img{
+    width: 53%;
+    margin: 15px auto;
+    display: inherit;
+}
+.list{
+    margin-top: 275px;
+}
+.list div a{
+    display: inherit;
+    color: #000;
+}
+/*媒体查询*/
+@media screen and (max-width: 320px){
+    .mui-input-group {
+    position: relative;
+    padding: 5px 12px;
+    top: 172px;
+    border: 0;
+    background: none;
+}
+    .list {
+        margin-top: 199px;
+    }
+}
+@media screen and (min-width: 768px){
+    .mui-input-group {
+        position: relative;
+        padding: 5px 50px;
+        top: 396px;
+        border: 0;
+        background: none;
+    }
+    .list {
+        margin-top: 480px;
+    }
+}
+@media screen and (max-width: 360px){
+    .list {
+        margin-top: 255px;
+    }
+}

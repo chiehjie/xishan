@@ -1,0 +1,63 @@
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color:transparent
+height: 100%;
+}
+.headerBox{
+    font-size: 3em;
+    background-color: rgb(212,39,39);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.headerBox div:nth-child(1){
+    position: absolute;
+    text-align: center;
+    font-size: 1.3em;
+    left: 5%;
+    top: 1%;
+    color: white;
+}
+.headerBox div:nth-child(2){
+    text-align: center;
+    color: white;
+}
+.bannar img{
+    width: 100%;
+}
+.bankFirst{
+    margin-top: 2%;
+    background-color: white;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bankImg{
+    text-align: center;
+}
+.bankImg img{
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+.bankText{
+    font-size: 3em;
+}
+.bankIcon{
+    font-size: 3em;
+    text-align: center;
+    color: #7F7F7F;
+}
+.bank{
+    margin-top: 3px;
+    background-color: white;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color: inherit;
+}
+a:visited {
+    color: black;
+}

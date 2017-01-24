@@ -1,0 +1,231 @@
+html,body,div,ul,li,ol,a,input,textarea,p,dl,dt,dd{margin:0;padding:0;}
+ul li{list-style: none;}
+a{text-decoration: none;cursor: pointer;}
+html{height: 100%;}
+body{height: 100%;background: #f5f5f5;position: relative;font-family: '微软雅黑';max-width: 640px;margin:auto;}
+a,input,img,textarea,span,div{outline: 0;-webkit-tap-highlight-color:rgba(255,0,0,0);}
+a{
+    color: rgba(0,0,0,1)!important;
+}
+header{
+    width:100%;
+    height: 45px;
+    background: #ececea;
+    border-bottom: 1px solid #ddd;
+}
+header.fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+.header{
+    text-align: center;
+    color: #4e4a49;
+    font-size: 1.4em;
+    height: 45px;
+    background: #FFF;
+    line-height: 45px;
+    position: relative;
+}
+#letter{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    font-size: 75px;
+    color: #555;
+    text-align: center;
+    line-height: 100px;
+    background: rgba(145,145,145,0.6);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin:-50px 0px 0px -50px;
+    z-index: 99;
+    display: none;
+}
+#letter img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin:25px 0px 0px 25px;
+}
+.sort_box{
+    width: 100%;
+    overflow: hidden;
+}
+.sort_list{
+    padding:10px 60px 10px 80px;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    border-bottom:1px solid #ddd;
+}
+
+.sort_list .num_logo{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+.sort_list .num_logo img{
+    width: 50px;
+    height: 50px;
+}
+.sort_list .num_name{
+    color: #000;
+}
+
+.sort_letter{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    color: #FFF;
+    font-size: 14px;
+    background: #CAC9C9;
+    border-bottom: 1px solid #ddd;
+}
+.initials{
+    position: fixed;
+    top: 47px;
+    right: 0px;
+    height: 100%;
+    width: 15px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 12px;
+    z-index: 99;
+    background: rgba(145,145,145,0);
+}
+.initials li img{
+    width: 14px;
+}
+.position{
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    display: inline-table;
+}
+.position img{
+    width: 18%;
+    float: left;
+}
+.position dl{
+    float: left;
+    font-size: 0.9em;
+    margin-top: 0px;
+}
+/*footer*/
+.footer div{
+    float: left;
+}
+.myFooter{
+    padding-top: 3%;
+    width: 20%;
+    text-align: center;
+}
+.myFooter img{
+    width: 50%;
+}
+.section{
+    width: 100%;
+    background: #999999;
+    padding-bottom: 10px;
+}
+.Location-boxOne{
+    position: absolute!important;
+    top: 32px!important;
+    left: 28px;
+    color: #FFF;
+    z-index: 2;
+}
+.Location-boxOne img{
+    width: 60%;
+    margin-top: 28px;
+}
+.CommodityName{
+    position: relative;
+    width: 90%;
+    margin-top: 55px;
+    margin-left: 20px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    font-size: 1.1em;
+    color: #000;
+    text-indent: 43px;
+    -webkit-border-radius: .3em;
+    -moz-border-radius: .3em;
+    border-radius: .4em;
+    border: 1px solid #FFF;
+}
+.AddTo{
+    background: #EFEFEF;
+}
+.sort_listOne{
+    padding: 10px 60px 10px 80px;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+.sort_listOne .num_logo {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+.news{
+    border-radius: 100%;
+    float: left;
+    width: 30px;
+    background: red;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    right: 35px;
+    color: #FFF;
+    top: 16px;
+}
+.sort_listOne .num_logo img{
+    width: 100%;
+}
+.tog{
+    text-align: center;
+    padding: 10px 10px;
+}
+.num_name dl{
+    float: left;
+}
+.AddTo{
+    border-radius: 5px;
+    padding: 8px 10px;
+    color: #FFF;
+    border: none;
+    float: right;
+    font-size: 0.9em;
+    background: #c0c0c0;
+    margin-top: 5px;
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    outline:medium;
+}
+.AlreadyAdded{
+    border-radius: 5px;
+    padding: 8px 10px;
+    color: #FFF;
+    border: none;
+    float: right;
+    font-size: 0.9em;
+    background: red;
+    margin-top: 5px;
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    outline:medium;
+}

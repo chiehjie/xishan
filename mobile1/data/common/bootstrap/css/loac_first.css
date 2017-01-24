@@ -1,0 +1,171 @@
+*{
+    font-family: "微软雅黑";
+}
+.headerBox{
+    font-size: 3em;
+    background-color: rgb(255,255,255);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.headerBox div:nth-child(1){
+    position: absolute;
+    text-align: center;
+    font-size: 1.3em;
+    left: 5%;
+    top: 1%;
+    color: #727272;
+}
+.headerBox div:nth-child(2){
+    text-align: center;
+}
+.jindu{
+    margin-top: 15%;
+}
+.jindu p{
+    width: 33.3%;
+    float: left;
+    font-size: 2.6em;
+    text-align: center;
+}
+.jindu p:nth-child(1){
+    color: #D42727;
+}
+.jindu p+p{
+    text-align: center;
+}
+.guocheng{
+    margin-top: 25%;
+    margin-left: 12%;
+}
+.guocheng div{
+    float: left;
+}
+.yuan{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #CFCFCF;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.yuan:nth-child(1){
+    background-color: #D42727;
+    margin-left: 3%;
+}
+.henxian{
+    width: 33%;
+    height: 3px;
+    background-color: #CFCFCF;
+    margin-top: 1.5%;
+}
+.container{
+    background-color: white;
+    margin-top: 8%;
+}
+.nameBox div{
+    float: left;
+    font-size: 2.6em;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+#name{
+    color: #D42727;
+}
+.time{
+    margin-top: 2px;
+    background-color: white;
+}
+.limit>div:nth-child(1){
+    font-weight: bold;
+    margin-top: 20%;
+    font-size: 3em;
+}
+.limit>div:nth-child(2) {
+    margin-top: 15%;
+    margin-bottom: 45%;
+}
+.timeLimt div{
+    float: left;
+    font-size: 3em;
+}
+.timeLimt div:nth-child(1){
+    color: #D42727;
+}
+.line{
+    width: 5px;
+    height: 180px;
+    background-color: #EFEFEF;
+    margin-top: 32.5px;
+    margin-right: 7.5%;
+}
+.myinput{
+    margin-top: 50px;
+    background-color: white;
+}
+.myInput{
+    background-color: white;
+}
+.imgIcon{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.mui-input-clear{
+    font-size: 2.5em;
+}
+input[type='text']{
+    height: 80px;
+    border: none;
+}
+.inputText{
+    margin-top: 2%;
+}
+.inputLine{
+    width: 100%;
+    height: 2px;
+    background-color: #DFDFDF;
+}
+.myCode input{
+    float: left;
+}
+.code{
+    float: left;
+    width: 30%;
+    height: 80px;
+    background-color: #EFEFEF;
+}
+.myLine{
+    float: left;
+}
+.getCode{
+    float: left;
+    width: 30%;
+    height: 80px;
+    background-color: #D42727;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    padding-top: 3%;
+}
+.textIcon img{
+    width: 50%;
+    margin-top: 10%;
+}
+.xieyi{
+    margin-top: 2%;
+}
+.box{
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+.content{
+    background-color: rgb(211,39,39);
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+.mytext{
+    color: white;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    font-size: 1.2em;
+}

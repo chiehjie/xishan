@@ -1,0 +1,146 @@
+*{
+    font-family: "微软雅黑";
+    margin: 0;
+    padding: 0;
+}
+.myNav p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+.bgImg{
+    padding: 0;
+}
+.bgImg img{
+    width: 100%;
+}
+.myBody{
+    background-color: rgb(239,239,239);
+    margin: 0;
+    padding: 0;
+}
+.touxiang{
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myimg{
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.touxiang img{
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+}
+.touxiang{
+    margin-top: -11%;
+}
+.username{
+    text-align: center;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    color: rgb(51,51,51);
+    font-size: 1.2em;
+
+}
+.myMoney *{
+    float: left;
+    text-align:center ;
+    margin: 0;
+    font-family: "微软雅黑";
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.myMoney div{
+    width: 50%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myMoney span{
+    margin-left: 10%;
+}
+.myline{
+    float: left;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(223,223,223);
+}
+.firstLine{
+    margin-bottom: 20px;
+     margin-top: 20px;
+ }
+.myIcon{
+    padding: 0;
+    float: left;
+}
+.myIcon div{
+    float: left;
+}
+.fontImg{
+    width: 20%;
+    text-align: center;
+}
+.fontImg img{
+    width: 40%;
+}
+.fontImg p{
+    font-family: "微软雅黑";
+    font-size: .9em;
+}
+.myList{
+    margin: 0;
+    padding: 0;
+}
+.listing{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(223,223,223);
+}
+.listing img{
+    width: 5%;
+}
+.listing img:nth-child(1){
+    margin-left: 5%;
+}
+.listing span{
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+.listing img:nth-child(3){
+    margin-left: 55%;
+}
+.lat span{
+    display: inline-block;
+    width: 61.61px;
+}
+.footer div{
+    float: left;
+}
+.myFooter{
+    padding-top: 3%;
+    width: 20%;
+    text-align: center;
+}
+.myFooter img{
+    width: 50%;
+}
+.myFooter p{
+    font-size: 1.1em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

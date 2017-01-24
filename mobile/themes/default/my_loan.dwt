@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$page_title} 触屏版</title>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/mui.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/loan.css"/>
+</head>
+<body>
+    <header>
+        <div class="mui-row headerBox">
+            <a href="javascript:window.history.back(-1);"><div class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></div></a>
+            <div class="mui-col-xs-12">
+                贷款
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="mui-row">
+            <div class="mui-col-xs-12 bannar">
+                <img src="images/kaihu/bannar.png" alt=""/>
+            </div>
+        </div>
+        <a href="{:url('user/my_loan_first')}">
+            <div class="mui-row bankFirst mui-row-col">
+                <div class="mui-col-xs-3 bankImg">
+                    <img src="images/kaihu/china.png" alt=""/>
+                </div>
+                <div class="mui-col-xs-7 bankText">
+                    中国银行
+                </div>
+                <div class="mui-col-xs-2 mui-icon mui-icon-arrowright bankIcon"></div>
+            </div>
+        </a>
+        <a href="{:url('user/my_loan_first')}">
+            <div class="mui-row bank mui-row-col">
+                <div class="mui-col-xs-3 bankImg">
+                    <img src="images/kaihu/icbc.png" alt=""/>
+                </div>
+                <div class="mui-col-xs-7 bankText">
+                    工商银行
+                </div>
+                <div class="mui-col-xs-2 mui-icon mui-icon-arrowright bankIcon"></div>
+            </div>
+        </a>
+        <a href="{:url('user/my_loan_first')}">
+            <div class="mui-row bank mui-row-col">
+                <div class="mui-col-xs-3 bankImg">
+                    <img src="images/kaihu/construction.png" alt=""/>
+                </div>
+                <div class="mui-col-xs-7 bankText">
+                    建设银行
+                </div>
+                <div class="mui-col-xs-2 mui-icon mui-icon-arrowright bankIcon"></div>
+            </div>
+        </a>
+        <a href="{:url('user/my_loan_first')}">
+            <div class="mui-row bank mui-row-col">
+                <div class="mui-col-xs-3 bankImg">
+                    <img src="images/kaihu/nongye.png" alt=""/>
+                </div>
+                <div class="mui-col-xs-7 bankText">
+                    农业银行
+                </div>
+                <div class="mui-col-xs-2 mui-icon mui-icon-arrowright bankIcon"></div>
+            </div>
+        </a>
+        <a href="{:url('user/my_loan_first')}">
+            <div class="mui-row bank mui-row-col">
+                <div class="mui-col-xs-3 bankImg">
+                    <img src="images/kaihu/communication.png" alt=""/>
+                </div>
+                <div class="mui-col-xs-7 bankText">
+                    交通银行
+                </div>
+                <div class="mui-col-xs-2 mui-icon mui-icon-arrowright bankIcon"></div>
+            </div>
+        </a>
+        <a href="{:url('user/my_loan_first')}">
+            <div class="mui-row bank mui-row-col">
+                <div class="mui-col-xs-3 bankImg">
+                    <img src="images/kaihu/youzheng.png" alt=""/>
+                </div>
+                <div class="mui-col-xs-7 bankText">
+                    邮政银行
+                </div>
+                <div class="mui-col-xs-2 mui-icon mui-icon-arrowright bankIcon"></div>
+            </div>
+        </a>
+        <a href="{:url('user/my_loan_first')}">
+            <div class="mui-row bank mui-row-col">
+                <div class="mui-col-xs-3 bankImg">
+                    <img src="images/kaihu/merchants.png" alt=""/>
+                </div>
+                <div class="mui-col-xs-7 bankText">
+                    招商银行
+                </div>
+                <div class="mui-col-xs-2 mui-icon mui-icon-arrowright bankIcon"></div>
+            </div>
+        </a>
+    </section>
+    <script src="__PUBLIC__/js/loan.js"></script>
+    <script src="__PUBLIC__/js/mui.js"></script>
+</body>
+</html>

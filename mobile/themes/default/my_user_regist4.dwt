@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<title>regist4</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/mui.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/regist4.css">
+</head>
+<body>
+	<header>
+		<div class="mui-row headerBox">
+			<div class="mui-action-back mui-icon mui-icon-left-nav "></div>
+			<div class="mui-col-xs-12">
+				手机快速注册
+			</div>
+		</div>
+	</header>
+		<div class="mui-row one_row">
+			<div class="mui-col-xs-1"></div>
+			<div class="mui-col-xs-11">
+				请设置登录密码
+			</div>
+		</div>
+		<form action="{:url('user/my_regist5')}" method="post">
+			<div class="mui-row">
+				<div class="mui-col-xs-1"></div>
+				<div class="mui-col-xs-10">
+					<input type="password" placeholder="请输入6-20位密码" name="password" class="psw" id="f_pas"/>
+				</div>
+				<div class="mui-col-xs-1"></div>
+			</div>
+			<div class="mui-row" style="margin-top: 10px">
+				<div class="mui-col-xs-1"></div>
+				<div class="mui-col-xs-1">
+					<input type="checkbox" class="ckbox">
+				</div>
+				<div class="mui-col-xs-10" style="font-size: 0.9em">
+					密码可见
+				</div>
+			</div>
+			<div class="mui-row t_row">
+				<div class="mui-col-xs-1"></div>
+				<div class="mui-col-xs-10 ">
+					<p class="p_text">密码由6-20位字母、数字或半角符号组成、不能是10以下纯数字/字母/半角符号/字母需区分大小写</p>
+				</div>
+				<div class="mui-col-xs-1"></div>
+			</div>
+			<div class="mui-row">
+				<div class="mui-col-xs-1"></div>
+				<div class="mui-col-xs-10">
+					<input type="submit" id="sbutton" value="完成" style="width: 100%;height: 40px;font-size: 0.9em;background-color: #D7D6D6;border: none"/>
+				</div>
+				<div class="mui-col-xs-1"></div>
+			</div>
+			<div class="mui-row">
+				<div class="mui-col-xs-1"></div>
+				<div class="mui-col-xs-10" style="font-size: 0.9em;margin-top: 15px">
+					遇到问题？您可以<a href="javascript:">联系客服</a>。
+				</div>
+				<div class="mui-col-xs-1"></div>
+			</div>
+		</form>
+	</section>
+	<script src="__PUBLIC__/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="__PUBLIC__/js/mui.js"></script>
+	<script src="__PUBLIC__/js/regist4.js" type="text/javascript"></script>
+</body>
+</html>

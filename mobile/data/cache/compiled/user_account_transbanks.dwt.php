@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="Generator" content="ECTouch 1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>转账到银行</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/mui.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/TransBank.css"/>
+    <style>
+        .btn{
+            display: inherit;
+            margin: auto;
+            padding: 10px 120px;
+            font-size: 1.2em;
+            color: #FFF;
+            margin-top: 40px;
+            border: none;
+            background-color: #DB5656;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="mui-row headerBox">
+		<a href="javascript:history.go(-1)">
+            <div class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></div>
+		
+            <div class="mui-col-xs-12">
+                转到银行卡
+            </div></a>
+        </div>
+    </header>
+    <form action="<?php echo url('user/account_transfer_banktwo');?>" style="margin-top: 20px;" method="post">
+        <div class="mui-row r_bg">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-2">姓名</div>
+            <div class="mui-col-xs-8">
+                <input type="text" class="name" name="username" placeholder="请输入姓名" maxlength="6">
+            </div>
+            <div class="mui-col-xs-1"></div>
+        </div>
+        <div class="mui-row r_bg">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-2">卡号</div>
+            <div class="mui-col-xs-8">
+                <input type="number" class="yhk" name="card" maxlength="19" placeholder="请输入银行卡卡号"/>
+            </div>
+            <div class="mui-col-xs-1"></div>
+        </div>
+        <div class="mui-row r_bg">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-2">银行</div>
+            <div class="mui-col-xs-8">
+                <input type="text" maxlength="19" readonly="readonly"/>
+            </div>
+            <div class="mui-col-xs-1"></div>
+        </div>
+        <div class="mui-row r_bg">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-2">金额</div>
+            <div class="mui-col-xs-8">
+                <input type="number" name="money" maxlength="19" placeholder="请输入转账金额"/>
+            </div>
+            <div class="mui-col-xs-1"></div>
+        </div>
+        <div class="mui-row">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-10">
+                <input type="submit" disabled="disabled" value="下一步" class="btn" style=" background-color: #DB5656;">
+            </div>
+            <div class="mui-col-xs-1"></div>
+        </div>
+        <div>
+            <p class="p">
+                使用账户余额付款<span class="tab">更换</span>
+            </p>
+            <div class="mui-backdrop">
+                <div class="mask">
+                    <div class="mode" style="font-size: 0.9em">
+                        选择付款方式
+                        <span class="mui-icon mui-icon-closeempty position"></span>
+                    </div>
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell mui-media">
+                            <a href="javascript:">
+                                <div class="mui-row">
+                                    <div class="mui-col-xs-2">
+                                        <img class="mui-media-object mui-pull-left" src="themes/default/images/gongshang.png">
+                                    </div>
+                                    <div class="mui-col-xs-9">
+                                        <div class="mui-media-body" style="font-size: 0.9em">
+                                            中国工商银行储蓄卡（6952）
+                                        </div>
+                                        <p class='mui-ellipsis'>可用额度10.000.00元</p>
+                                    </div>
+                                    <div class="mui-col-xs-1">
+                                        <span class="mui-icon active active1 mui-icon-checkmarkempty"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell mui-media">
+                            <a href="javascript:">
+                                <div class="mui-row">
+                                    <div class="mui-col-xs-2">
+                                        <img class="mui-media-object mui-pull-left" src="themes/default/images/monuy.png">
+                                    </div>
+                                    <div class="mui-col-xs-9">
+                                        <div class="mui-media-body" style="font-size: 0.9em">
+                                            账户余额
+                                            <p class='mui-ellipsis'>可用额度366.00元</p>
+                                        </div>
+                                    </div>
+                                    <div class="mui-col-xs-1 ">
+                                        <span class="active mui-icon mui-icon-checkmarkempty" ></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="__PUBLIC__/js/jquery-1.11.3.js"></script>
+    <script src="__PUBLIC__/js/mui.js"></script>
+    <script>
+        $(function(){
+            $('.mask  ul li').click(function(){
+                $('.mask ul li .active').removeClass('active1');
+                $('.mask ul li .active').eq($(this).index()).addClass('active1');
+            })
+            $('.position ').click(function(){
+                $('.mui-backdrop').fadeOut(200);
+            });
+            $('.tab').click(function(){
+                $('.mui-backdrop').fadeIn(200);
+            })
+        })
+        window.onload = function(){
+            var cd = document.getElementsByClassName('yhk')[0];
+            var inpt = document.getElementsByClassName('btn')[0];
+            cd.onkeyup = function(){
+                if(cd.value!=''){
+                    inpt.disabled = false;
+                    inpt.style.background = '#d32727';
+                    inpt.style.color = '#fff';
+                }else{
+                    inpt.disabled = true;
+                    inpt.style.background = '#e4e4e4';
+                    inpt.style.color = '#b7b7b7';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

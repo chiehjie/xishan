@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>左划出现删除按钮，右滑隐藏</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/Transferecord.css">
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+    <script src="__PUBLIC__/js/mui.js"></script>
+</head>
+<body>
+<header>
+    <div class="mui-row headerBox">
+        <div class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></div>
+        <div>
+            转账记录
+        </div>
+    </div>
+</header>
+<p class="list">本月</p>
+<div class="line-wrapper">
+    <div class="line-scroll-wrapper">
+        <div class="line-normal-wrapper">
+            <div class="line-normal-left-wrapper">
+                <div class="line-normal-info-wrapper">
+                    <div class="line-normal-user-name">今天</div>
+                    <div class="line-normal-msg">07:02</div>
+                </div>
+                <div class="line-normal-avatar-wrapper"><img src="images/touxiang.png" /></div>
+            </div>
+            <div class="money">
+                <p>+50.00元</p>
+                <p>小郭-转账</p>
+            </div>
+        </div>
+        <div class="line-btn-delete"><button>删除</button></div>
+    </div>
+</div>
+<p class="list">9月</p>
+<div class="line-wrapper">
+    <div class="line-scroll-wrapper">
+        <div class="line-normal-wrapper">
+            <div class="line-normal-left-wrapper">
+                <div class="line-normal-info-wrapper">
+                    <div class="line-normal-user-name">今天</div>
+                    <div class="line-normal-msg">07:02</div>
+                </div>
+                <div class="line-normal-avatar-wrapper"><img src="images/touxiang.png" /></div>
+            </div>
+            <div class="money">
+                <p>+50.00元</p>
+                <p>小郭-转账</p>
+            </div>
+        </div>
+        <div class="line-btn-delete"><button>删除</button></div>
+    </div>
+</div>
+<div class="line-wrapper">
+    <div class="line-scroll-wrapper">
+        <div class="line-normal-wrapper">
+            <div class="line-normal-left-wrapper">
+                <div class="line-normal-info-wrapper">
+                    <div class="line-normal-user-name">今天</div>
+                    <div class="line-normal-msg">07:02</div>
+                </div>
+                <div class="line-normal-avatar-wrapper"><img src="images/touxiang.png" /></div>
+            </div>
+            <div class="money">
+                <p>+50.00元</p>
+                <p>小郭-转账</p>
+            </div>
+        </div>
+        <div class="line-btn-delete"><button>删除</button></div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function(e) {
+        // 设定每一行的宽度=屏幕宽度+按钮宽度
+        $(".line-scroll-wrapper").width($(".line-wrapper").width() + $(".line-btn-delete").width());
+        // 设定常规信息区域宽度=屏幕宽度
+        $(".line-normal-wrapper").width($(".line-wrapper").width());
+        // 设定文字部分宽度（为了实现文字过长时在末尾显示...）
+        $(".line-normal-msg").width($(".line-normal-wrapper").width() - 860);
+
+        // 获取所有行，对每一行设置监听
+        var lines = $(".line-normal-wrapper");
+        var len = lines.length;
+        var lastX, lastXForMobile;
+
+        // 用于记录被按下的对象
+        var pressedObj;  // 当前左滑的对象
+        var lastLeftObj; // 上一个左滑的对象
+
+        // 用于记录按下的点
+        var start;
+
+        // 网页在移动端运行时的监听
+        for (var i = 0; i < len; ++i) {
+            lines[i].addEventListener('touchstart', function(e){
+                lastXForMobile = e.changedTouches[0].pageX;
+                pressedObj = this; // 记录被按下的对象
+
+                // 记录开始按下时的点
+                var touches = event.touches[0];
+                start = {
+                    x: touches.pageX, // 横坐标
+                    y: touches.pageY  // 纵坐标
+                };
+            });
+
+            lines[i].addEventListener('touchmove',function(e){
+                // 计算划动过程中x和y的变化量
+                var touches = event.touches[0];
+                delta = {
+                    x: touches.pageX - start.x,
+                    y: touches.pageY - start.y
+                };
+
+                // 横向位移大于纵向位移，阻止纵向滚动
+                if (Math.abs(delta.x) > Math.abs(delta.y)) {
+                    event.preventDefault();
+                }
+            });
+
+            lines[i].addEventListener('touchend', function(e){
+                if (lastLeftObj && pressedObj != lastLeftObj) { // 点击除当前左滑对象之外的任意其他位置
+                    $(lastLeftObj).animate({marginLeft:"0"}, 200); // 右滑
+                    lastLeftObj = null; // 清空上一个左滑的对象
+                }
+                var diffX = e.changedTouches[0].pageX - lastXForMobile;
+                if (diffX < -150) {
+                    $(pressedObj).animate({marginLeft:"-132px"},200); // 左滑
+                    lastLeftObj && lastLeftObj != pressedObj &&
+                    $(lastLeftObj).animate({marginLeft:"0"}, 200); // 已经左滑状态的按钮右滑
+                    lastLeftObj = pressedObj; // 记录上一个左滑的对象
+                } else if (diffX > 150) {
+                    if (pressedObj == lastLeftObj) {
+                        $(pressedObj).animate({marginLeft:"0"}, 200); // 右滑
+                        lastLeftObj = null; // 清空上一个左滑的对象
+                    }
+                }
+            });
+        }
+
+        // 网页在PC浏览器中运行时的监听
+        for (var i = 0; i < len; ++i) {
+            $(lines[i]).bind('mousedown', function(e){
+                lastX = e.clientX;
+                pressedObj = this; // 记录被按下的对象
+            });
+
+            $(lines[i]).bind('mouseup', function(e){
+                if (lastLeftObj && pressedObj != lastLeftObj) { // 点击除当前左滑对象之外的任意其他位置
+                    $(lastLeftObj).animate({marginLeft:"0"}, 200); // 右滑
+                    lastLeftObj = null; // 清空上一个左滑的对象
+                }
+                var diffX = e.clientX - lastX;
+                if (diffX < -150) {
+                    $(pressedObj).animate({marginLeft:"-132px"}, 200); // 左滑
+                    lastLeftObj && lastLeftObj != pressedObj &&
+                    $(lastLeftObj).animate({marginLeft:"0"}, 200); // 已经左滑状态的按钮右滑
+                    lastLeftObj = pressedObj; // 记录上一个左滑的对象
+                } else if (diffX > 150) {
+                    if (pressedObj == lastLeftObj) {
+                        $(pressedObj).animate({marginLeft:"0"}, 200); // 右滑
+                        lastLeftObj = null; // 清空上一个左滑的对象
+                    }
+                }
+            });
+        }
+        $('.line-btn-delete button').click(function(){
+            $(this).parent().parent().parent().remove();
+        });
+    });
+    $(function(){
+        var str =$('.line-wrapper').text();
+        if (str === ''){
+            $('.list').remove();
+        }
+    })
+</script>
+</body>
+</html>

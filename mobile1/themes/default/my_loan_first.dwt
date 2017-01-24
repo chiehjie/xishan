@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <title>{$page_title} 触屏版</title>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/mui.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/loac_first.css"/>
+</head>
+<body>
+    <header>
+        <div class="mui-row headerBox">
+            <a href="javascript:window.history.back(-1);"><div class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></div></a>
+            <div class="mui-col-xs-12">
+                身份验证
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="mui-row">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-10">
+                <div class="jindu">
+                    <p>身份验证</p>
+                    <p>详细信息</p>
+                    <p>授权进度</p>
+                </div>
+                <div class="guocheng">
+                    <div class="yuan"></div>
+                    <div class="henxian"></div>
+                    <div class="yuan"></div>
+                    <div class="henxian"></div>
+                    <div class="yuan"></div>
+                </div>
+            </div>
+            <div class="mui-col-xs-1"></div>
+        </div>
+        <div class="mui-row container">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-10 nameBox">
+                <div>您好，</div>
+                <div id="name">李二狗</div>
+            </div>
+            <div class="mui-col-xs-1"></div>
+        </div>
+        <div class="mui-row time">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-5 limit">
+                <div>最高贷款额度</div>
+                <div class="timeLimt">
+                    <div id="money">45,0000,00</div>
+                    <div>元</div>
+                </div>
+
+            </div>
+            <div class="mui-col-xs-1 line"></div>
+            <div class="mui-col-xs-5 limit">
+                <div>最长贷款期限</div>
+                <div class="timeLimt">
+                    <div id="time">24</div>
+                    <div>个月</div>
+                </div>
+            </div>
+        </div>
+        <div class="mui-row myinput">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-1 imgIcon">
+                <img src="images/kaihu/loan_1.png" alt=""/>
+            </div>
+            <div class="mui-col-xs-10 inputText">
+                 <input type="text" class="mui-input-clear" placeholder="请输入借贷金额:">
+                <div class="inputLine"></div>
+            </div>
+        </div>
+        <div class="mui-row myInput">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-1 imgIcon">
+                <img src="images/kaihu/loan_2.png" alt=""/>
+            </div>
+            <div class="mui-col-xs-10 inputText">
+                <input type="text" class="mui-input-clear" placeholder="请输入借贷期限:">
+                <div class="inputLine"></div>
+            </div>
+        </div>
+        <div class="mui-row myInput">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-1 imgIcon">
+                <img src="images/kaihu/loan_3.png" alt=""/>
+            </div>
+            <div class="mui-col-xs-10 inputText">
+                <input type="text" class="mui-input-clear" placeholder="请输入手机号:">
+                <div class="inputLine"></div>
+            </div>
+        </div>
+        <div class="mui-row myInput">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-1 imgIcon">
+                <img src="images/kaihu/loan_4.png" alt=""/>
+            </div>
+            <div class="mui-col-xs-10 inputText myCode">
+                <input type="text" class="mui-input-clear" style="width: 60%" placeholder="请输入验证码:">
+                <div class="code"></div>
+                <div class="inputLine myLine"></div>
+            </div>
+        </div>
+        <div class="mui-row myInput">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-1 imgIcon">
+                <img src="images/kaihu/loan_5.png" alt=""/>
+            </div>
+            <div class="mui-col-xs-10 inputText myCode">
+                <input type="text" class="mui-input-clear" style="width: 60%" placeholder="请输入短信验证码:">
+                <div class="getCode">获取验证码</div>
+                <div class="inputLine myLine"></div>
+            </div>
+        </div>
+        <div class="mui-row xieyi">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-1">
+                <div class="textIcon" >
+                    <img src="images/kaihu/loan_7.png" alt=""/>
+                </div>
+            </div>
+            <div class="mui-col-xs-10 inputText myCode">
+                阅读并同意银行开户协议
+            </div>
+        </div>
+        <div class="mui-row box">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-10 content">
+                <a href="{:url('user/my_loan_two')}">
+                    <div class="mui-mui-col-xs-12 mytext text_two">
+                        下一步
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+    </section>
+    <script src="__PUBLIC__/js/mui.js"></script>
+</body>
+</html>

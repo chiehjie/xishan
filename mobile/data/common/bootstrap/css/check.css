@@ -1,0 +1,142 @@
+#all{
+	width: 100%;
+	height: auto;
+	background: #efefef;
+	font-family: '微软雅黑';
+}
+header{
+	width: 100%;
+	line-height: 50px;
+	background: #fff;
+	border-bottom: 1px solid#bfbfbf;
+}
+.header_Cen{
+	width: 90%;
+	margin:0 auto;
+	font-size: 2.5em;
+}
+.header_Cen div:nth-child(1){
+	font-size: 0.7em;
+	color: #DB5656;
+	padding-top: 11px;;
+}
+.header_Cen div:nth-child(2){
+	font-size: 0.4em;
+	color: #333;
+}
+section{
+	width: 100%;
+	height: auto;
+}
+.sectionTop{
+	width: 100%;
+	height: 215px;
+	background: #fff;
+	margin-top: 55px;
+	border-top: 1px solid#bfbfbf;
+	border-bottom: 1px solid#bfbfbf;
+}
+.sectionTop_center{
+	width: 90%;
+	line-height: 70px;
+	margin:0 auto;
+}
+.sectionTop_center img{
+	display: inline-block;
+	float: left;
+	margin-top: 50px;
+}
+.sectionTop_center div:nth-child(1),.hideCen_cen div:nth-child(1){
+	float: left;
+}
+.sectionTop_center div:nth-child(1) span{
+	display: inline-block;
+	padding-left: 20px;
+	padding-top: 37.5px;
+	font-size: 2.6em;
+	color: #333;
+}
+.sectionTop_center div:nth-child(1) p{
+	font-size: 38px;
+	color: #999;
+}
+.sectionTop_center div:nth-child(2){
+	float: left;
+	padding-top: 82px;
+	font-size: 1em;
+	color: #666;
+	text-align: right;
+}
+.sectiono{
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 0.9em;
+	color: #333;
+}
+.sectiont{
+	width: 100%;
+	background: #fff;
+	line-height: 60px;
+}
+.sectionCen{
+	width: 90%;
+	margin:0 auto;
+}
+.sectionCen div:nth-child(1){
+	float: left;
+	color: #333;
+	font-size: 0.9em;
+}
+.sectionCen div:nth-child(2) input{
+	height: 60px;
+	float: left;
+	border:none;
+	margin:0;
+	padding:0;
+	font-size:1.2em;
+}
+.sectionBot{
+	width: 100%;
+	line-height: 150px;
+	background: #fff;
+	box-sizing: border-box;
+	border-top: 1px solid#bfbfbf;
+	border-bottom: 1px solid#bfbfbf;
+}
+.sectionBot_center{
+	width: 90%;
+	height: 150px;
+	margin:0 auto;
+}	
+.sectionBot_center div:nth-child(1){
+	display: inline-block;
+	font-size: 2.7em;
+	color: #333;
+}
+.sectionBot_center div:nth-child(2) input{
+	height: 148px;
+	margin-top:1px;
+	padding:0;
+	border:none;
+	font-size: 2.5em;
+	color: #7f7f7f;
+}
+footer{
+	width: 100%;
+	height: auto;
+}
+.foot{
+	width: 84%;
+	margin:30px auto 0;
+}
+.foot a{
+	display: inline-block;
+	width: 100%;
+	border-radius: 15px;
+	text-align: center;
+	line-height: 50px;
+	background: #e4e4e4;
+	color: #b7b7b7;
+	font-size: 1.3em;
+}

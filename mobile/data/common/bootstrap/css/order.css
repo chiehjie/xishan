@@ -1,0 +1,103 @@
+#all{
+	width: 100%;
+	height: auto;
+	background: #efefef;
+	font-family: '微软雅黑';
+}
+.headerBox{
+	font-size: 1.1em;
+	background-color: rgb(255,255,255);
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.headerBox div:nth-child(1){
+	position: absolute;
+	text-align: center;
+	font-size: 1.3em;
+	left: 5%;
+	top: 12px;
+	color: #727272;
+}
+.headerBox div:nth-child(2){
+	text-align: center;
+}
+section{
+	width: 100%;
+	height: auto;
+}
+.sectionTop{
+	width: 100%;
+	/*line-height: 415px;*/
+	background: #f6f5f5;
+}
+.sectionTop_cen,.sectionBot_cen{
+	width: 90%;
+	margin:0 auto;
+}
+.sectionTop_cen div:nth-child(1){
+	text-align: right;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.sectionTop_cen div:nth-child(1) img{
+	vertical-align: middle;
+	width: 60%;
+}
+.sectionTop_cen div:nth-child(2){
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.sectionTop_cen div:nth-child(2) p{
+	text-align: center;
+	/*font-size: 1em;*/
+	color: #1c1c1c;
+	padding-top: 10px;
+}
+.sectionTop_cen div:nth-child(2) span{
+	color: #d32727;
+}
+.sectionBot{
+	width: 100%;
+	background: #d8d5d5;
+}
+.sectionBot_cen{
+	width: 90%;
+	margin:0 auto;
+	padding-bottom: 20px;
+}
+.sectionBot_cen p:nth-child(1){
+	padding-top: 20px;
+	font-size: 1em;
+	color: #000;
+	text-align: center;
+}
+.sectionBot_cen p{
+	color: #838282;
+}
+.sectionBot_cen span{
+	color: #000;
+}
+.sectionBot_cen small{
+	color: #b84747;
+}
+footer{
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+}
+.foot{
+	width: 40%;
+	margin:0 auto;
+}
+.foot input{
+	display: inline-block;
+	width: 100%;
+	line-height: 50px;
+	background: #d32727;
+	text-align: center;
+	color: #fff;
+	border-radius: 10px;
+	font-size: 1em;
+	border: none!important;
+	padding: 0;
+}

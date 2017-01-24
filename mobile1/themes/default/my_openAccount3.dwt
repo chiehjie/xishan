@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <title>{$page_title} 触屏版</title>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/mui.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/loan_two.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/LArea.css"/>
+</head>
+<body>
+    <header>
+        <div class="mui-row headerBox">
+            <a href="javascript:window.history.back(-1);"><div class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></div></a>
+            <div class="mui-col-xs-12">
+                详细资料
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="mui-row box-color">
+            <div class="mui-col-xs-1"></div>
+            <div class="mui-col-xs-10">
+                <div class="jindu">
+                    <p>身份验证</p>
+                    <p>详细信息</p>
+                    <p>授权进度</p>
+                </div>
+                <div class="guocheng">
+                    <div class="yuan"></div>
+                    <div class="henxian"></div>
+                    <div class="yuan"></div>
+                    <div class="henxian"></div>
+                    <div class="yuan"></div>
+                </div>
+            </div>
+            <div class="mui-col-xs-1"></div>
+        </div>
+        <div>
+            <form action="" class="registerform">
+                <div class="duan">
+                    <p>姓名:</p>
+                    <input type="text"/>
+                </div>
+                <div class="duan">
+                    <p>性别:</p>
+                    <input type="text"/>
+                </div>
+                <div class="duan">
+                    <p>民族:</p>
+                    <input type="text"/>
+                </div>
+                <div class="duan">
+                    <p>出生日期:</p>
+                    <input type="DATE"/>
+                </div>
+                <div class="chang">
+                    <p>身份证号:</p>
+                    <input type="text" value="" name="name" class="inputxt" datatype="idcard" nullmsg="请填写身份证号码！" errormsg="您填写的身份证号码不对！" />
+                    <span class="Validform_checktip" id="card"></span>
+                </div>
+                <div class="chang">
+                    <p>户籍地址:</p>
+                    <input id="demo1" type="text" readonly="" placeholder="" value="">
+                </div>
+                <div class="chang">
+                    <p>现居住地;</p>
+                    <input id="demo2" type="text" readonly="" placeholder="" value="">
+                </div>
+                <div class="chang">
+                    <p>邮编:</p>
+                    <input id="youbian" type="text" placeholder="" value="" onblur="youBian()">
+                    <div id="label5"></div>
+                </div>
+                <div class="duan">
+                    <p>职业：</p>
+                    <input type="text"/>
+                </div>
+                <div class="duan">
+                    <p>学历：</p>
+                    <input type="text"/>
+                </div>
+                <div class="chang">
+                    <p>公司:</p>
+                    <input type="text"/>
+                </div>
+                <div class="chang">
+                    <p>推荐人姓名:</p>
+                    <input type="text"/>
+                </div>
+                <div class="chang">
+                    <p>推荐人号码;</p>
+                    <input type="text"/>
+                </div>
+                <div id="myButton">
+                    <input type="button" value="提 交 申 请" id="button" />
+                </div>
+            </form>
+        </div>
+        <div id="meng" style="display: none">
+            <div id="succese">
+                <img src="images/kaihu/success.png" alt=""/>
+                <div id="knowBox">
+                    <h1>提交成功，审核中</h1>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;您的开户申请我们已收到并正在受理。申请结果<br><br><br>
+                        将于一个工作日内，通过短信或电话通知您，谢谢<br><br><br>
+                        您对本产品的关注，请耐心等待。
+                    </p>
+                    <div id="buttonBox">
+                        <a href="{:url('user/my_Authentication')}">
+                            <input type="button" value="我知道了" id="knowButton"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="__PUBLIC__/js/mui.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/Validform_v5.3.2_min.js"></script>
+    <script src="__PUBLIC__/js/LAreaData1.js"></script>
+    <script src="__PUBLIC__/js/LAreaData2.js"></script>
+    <script src="__PUBLIC__/js/LArea.js"></script>
+    <script src="__PUBLIC__/js/loan_two.js"></script>
+
+</body>
+</html>
